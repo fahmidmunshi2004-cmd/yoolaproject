@@ -15,6 +15,12 @@
     padding: 10px;
     position: relative;
     transition: .1s linear;
+    padding-left: 15px;
+    overflow: hidden;
+}
+
+.sidebar-list li a span {
+    white-space: nowrap;
 }
 
 .sidebar-list li a:hover {
@@ -40,4 +46,96 @@
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+    transition: .4s linear;
+}
+
+
+/* sidebar collapsed */
+
+
+/* sidebar default */
+.rs-sidebar-wrapper {
+    width: 307px;
+    transition: width 0.35s ease;
+}
+
+/* main content default */
+.page__body-wrapper {
+    width: calc(100% - 307px);
+    transition: all 0.35s ease;
+}
+
+/* collapsed state */
+body.sidebar-collapsed .rs-sidebar-wrapper {
+    width: 90px;
+}
+
+body.sidebar-collapsed .page__body-wrapper {
+    width: calc(100% - 80px);
+}
+
+.sidebar-area span {
+    opacity: 1;
+    transition: .1s linear;
+    display: block;
+}
+
+/* collapsed state */
+body.sidebar-collapsed .sidebar-area span {
+    color: transparent;
+}
+
+/* center icons */
+body.sidebar-collapsed .sidebar-list li a {
+    gap: 0;
+    width: 48px;
+}
+
+body.sidebar-collapsed .sidebar-list li a.active::after {
+    height: 100%;
+    right: auto;
+    left: 0;
+}
+
+.side-bar-logo {
+    position: relative;
+    width: 100px;
+    height: 40px;
+}
+
+/* both logos base state */
+.side-bar-logo .big-logo,
+.side-bar-logo .small-logo {
+    position: absolute;
+    top: 0;
+    transition: all 0.35s ease;
+}
+
+/* default visible */
+.side-bar-logo .big-logo {
+    left: 0;
+    opacity: 1;
+}
+
+.side-bar-logo .small-logo {
+    left: 100px;
+    opacity: 0;
+}
+
+body.sidebar-collapsed .side-bar-logo .big-logo {
+    left: -100px;
+    opacity: 0;
+}
+
+body.sidebar-collapsed .side-bar-logo .small-logo {
+    left: 0;
+    opacity: 1;
+}
+
+body.sidebar-collapsed .sidebar-author .author-left-content {
+    display: none;
+}
+
+body.sidebar-collapsed .sidebar-author .icon {
+    margin: auto;
 }

@@ -7,16 +7,19 @@ document.querySelectorAll('.dropdown').forEach(dropdown => {
         e.preventDefault();
         e.stopPropagation();
 
+        // close others //
         document.querySelectorAll('.dropdown-menu').forEach(m => {
-            if (m !== menu) m.classList.add('hidden');
+            if (m !== menu) m.classList.remove('active');
         });
 
-        menu.classList.toggle('hidden');
+        // toggle current //
+        menu.classList.toggle('active');
     });
 });
 
+// click outside //
 document.addEventListener('click', () => {
     document.querySelectorAll('.dropdown-menu').forEach(menu => {
-        menu.classList.add('hidden');
+        menu.classList.remove('active');
     });
 });

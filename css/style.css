@@ -108,3 +108,18 @@ input::placeholder {
     letter-spacing: -0.02em;
     color: var(--gray-300);
 }
+
+/* custom dropdown */
+.dropdown-menu {
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.dropdown-menu.active {
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+}
