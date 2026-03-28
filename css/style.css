@@ -1,0 +1,79 @@
+:root {
+    /* Yellow */
+    --yellow-50: #fffbeb;
+    --yellow-100: #fef3c7;
+    --yellow-200: #fde68a;
+    --yellow-300: #fcd34d;
+    --yellow-400: #fbbf24;
+    --yellow-500: #ffcc00;
+    --yellow-600: #d9ae00;
+    --yellow-700: #b38f00;
+    --yellow-800: #8c7100;
+    --yellow-900: #665200;
+
+    /* Gray / Dark */
+    --gray-50: #f1f3f5;
+    --gray-100: #e2e6ea;
+    --gray-200: #c5cdd5;
+    --gray-300: #8d9bad;
+    --gray-400: #4a5568;
+    --gray-500: #0f1b2d;
+    --gray-600: #0d1828;
+    --gray-700: #0a121e;
+    --gray-800: #070d15;
+    --gray-900: #04070b;
+
+    /* Green */
+    --green-50: #ecfdf5;
+    --green-100: #d1fae5;
+    --green-200: #a7f3d0;
+    --green-300: #6ee7b7;
+    --green-400: #34d399;
+    --green-500: #10b981;
+    --green-600: #059669;
+    --green-700: #047857;
+    --green-800: #065f46;
+    --green-900: #064e3b;
+
+    /* Blue */
+    --blue-50: #eff6ff;
+    --blue-100: #dbeafe;
+    --blue-200: #bfdbfe;
+    --blue-300: #93c5fd;
+    --blue-400: #60a5fa;
+    --blue-500: #3b82f6;
+    --blue-600: #2563eb;
+    --blue-700: #1d4ed8;
+    --blue-800: #1e40af;
+    --blue-900: #1e3a8a;
+
+    /* Red */
+    --red-50: #fef2f2;
+    --red-100: #fee2e2;
+    --red-200: #fecaca;
+    --red-300: #fca5a5;
+    --red-400: #f87171;
+    --red-500: #ef4444;
+    --red-600: #dc2626;
+    --red-700: #b91c1c;
+    --red-800: #991b1b;
+    --red-900: #7f1d1d;
+
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #FBFBFE;
+}
+
+.scrollbar-none {
+    scrollbar-width: none;
+}
+
+.scrollbar-thin {
+    scrollbar-width: thin;
+}
