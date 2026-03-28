@@ -1,0 +1,43 @@
+.sidebar-list li {
+    margin-bottom: 10px;
+}
+
+.sidebar-list li a {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gray-300);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 48px;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+    transition: .1s linear;
+}
+
+.sidebar-list li a:hover {
+    background: var(--yellow-50);
+}
+
+.sidebar-list li a.active {
+    color: var(--yellow-400);
+    background: var(--yellow-50);
+}
+
+.sidebar-list li a.active img {
+    filter: sepia(1) saturate(6) hue-rotate(10deg) brightness(1.1) contrast(1);
+}
+
+.sidebar-list li a.active::after {
+    position: absolute;
+    content: "";
+    border-radius: 25px;
+    width: 2.5px;
+    height: 16px;
+    background: var(--yellow-400);
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}

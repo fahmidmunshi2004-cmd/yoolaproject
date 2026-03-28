@@ -18,20 +18,278 @@
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="../tailwind.config.js"></script>
 
     <!-- fav icon -->
-    <link rel="shortcut icon" href="../assets/img/icon/yoola-fav-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/fav-icon/yoola-fav-icon.png" type="image/x-icon">
 
     <!-- custom css -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
 </head>
 
 <body>
-    <!-- sidebar -->
-    <section class="sidebar-area max-w-[1400px] mx-auto text-red50">
+    <div class="grid grid-cols-12">
+        <!-- sidebar -->
+        <section
+            class="sidebar-area w-[307px] bg-white col-span-2 border-r border-[#E2E6EA] fixed left-0 top-0 z-[99] h-full overflow-y-scroll scrollbar-none">
 
-    </section>
+            <!-- sidebar-header -->
+            <div
+                class="header h-[84px] p-4 border-b border-[#E2E6EA] flex flex-col justify-center sticky top-0 z-10 bg-white">
+                <div class="logo">
+                    <a href="#">
+                        <img src="../assets/img/logo/main-logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <!-- sidebar-main-content -->
+
+            <div class="main-content p-4">
+
+                <!-- Core -->
+                <div class="item mb-8">
+                    <h4 class="text-[#C5CDD5] text-sm font-medium mb-4 uppercase">
+                        Core
+                    </h4>
+
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/objects-column.svg" alt="">
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/bag-01.svg" alt="">
+                                Operations
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/room-service.svg" alt="">
+                                Restaurants
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/delivery-man.svg" alt="">
+                                Drivers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/user-basket.svg" alt="">
+                                Customers
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- finance -->
+                <div class="item mb-8">
+                    <h4 class="text-[#C5CDD5] text-sm font-medium mb-4 uppercase">
+                        finance
+                    </h4>
+
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/chart-pie-alt.svg" alt="">
+                                Finance
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/pricing.html" class="active">
+                                <img src="../assets/img/icons/align-center.svg" alt="">
+                                JURA Pricing
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Growth -->
+                <div class="item mb-8">
+                    <h4 class="text-[#C5CDD5] text-sm font-medium mb-4 uppercase">
+                        Growth
+                    </h4>
+
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/bullseye-arrow.svg" alt="">
+                                Marketing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/gift-01.svg" alt="">
+                                Referrals
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/document.svg" alt="">
+                                Blog & Content
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Support -->
+                <div class="item mb-8">
+                    <h4 class="text-[#C5CDD5] text-sm font-medium mb-4 uppercase">
+                        Support
+                    </h4>
+
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/headphone.svg" alt="">
+                                Support
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- system -->
+                <div class="item mb-8">
+                    <h4 class="text-[#C5CDD5] text-sm font-medium mb-4 uppercase">
+                        system
+                    </h4>
+
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/setting-01.svg" alt="">
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- sign out -->
+                <div class="author flex items-center gap-4 py-7 pb-0 border-t border-[#E2E6EA] mt-[80px]">
+                    <a href="#">
+                        <img class="w-11 h-11 rounded-full object-cover" src="../assets/img/author/author-01.png"
+                            alt="">
+                    </a>
+                    <div class="info">
+                        <h5 class="text-lg font-semibold">Super Admin</h5>
+                        <span class="text-base font-normal text-[#8D9BAD]">admin@yoola.sn</span>
+                    </div>
+                    <div class="icon ml-auto">
+                        <a href="#">
+                            <img src="../assets/img/icons/exit.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="main-content col-span-10 absolute right-0 w-[calc(100%-307px)]">
+            <!-- header -->
+            <header
+                class="header-area h-[84px] flex items-center justify-between p-6 bg-white border-b border-[#E2E6EA] sticky top-0 z-10 bg-white">
+
+                <!-- header left-->
+                <div class="left-content flex items-center gap-10">
+                    <button>
+                        <img src="../assets/img/icons/menu-burger.svg" alt="">
+                    </button>
+                    <div class="title flex items-center gap-[10px]">
+                        <h3 class="text-base font-normal text-[#8D9BAD]">Yoola Admin</h3>
+                        <img src="../assets/img/icons/right-arrow.svg" alt="">
+                        <h4 class="text-base font-semibold text-[#0D1828]">JURA Pricing</h4>
+                    </div>
+                </div>
+
+                <!-- header right-->
+                <div class="right-content flex items-center gap-[10px]">
+                    <form action="#" class="search mr-[14px]">
+                        <div class="input relative">
+                            <input type="text" placeholder="Search  ..." class="min-w-[255px]">
+                            <a href="#" class="absolute left-4 top-1/2 -translate-y-1/2">
+                                <img src="../assets/img/icons/search.svg" alt="">
+                            </a>
+                        </div>
+                    </form>
+
+                    <!-- notification -->
+                    <a href="#"
+                        class="w-12 h-12 rounded-full border border-[#E2E6EA] flex items-center justify-center relative flex-[0_0_auto]">
+                        <img src="../assets/img/icons/bell.svg" alt="">
+                        <span
+                            class="text-[11px] font-medium text-white w-5 h-5 border-1 border-[#fff] bg-[#EF4444] rounded-full flex items-center justify-center absolute top-0 right-0 m-[-2px]">3</span>
+                    </a>
+
+                    <div class="dropdown relative inline-block">
+                        <div class="author-profile">
+                            <a href="#" class="dropdown-btn flex items-center gap-2">
+                                <img class="w-12 h-12 rounded-full object-cover"
+                                    src="../assets/img/author/author-01.png" alt="">
+                                <img src="../assets/img/icons/down-angel.svg" alt="">
+                            </a>
+                        </div>
+
+                        <!-- Dropdown -->
+                        <div
+                            class="dropdown-menu hidden absolute right-0 mt-3 w-56 bg-white rounded-lg shadow-lg border border-gray200 z-50">
+                            <ul class="py-2 text-sm text-gray600">
+
+                                <li>
+                                    <a href="#" class="flex items-center gap-3 px-4 py-2 hover:bg-gray100">
+                                        <i class="fa-solid fa-user"></i> Profile
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="flex items-center gap-3 px-4 py-2 hover:bg-gray100">
+                                        <i class="fa-solid fa-gear"></i> Settings
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="flex items-center gap-3 px-4 py-2 hover:bg-gray100">
+                                        <i class="fa-solid fa-bell"></i> Notifications
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="flex items-center gap-3 px-4 py-2 hover:bg-gray100">
+                                        <i class="fa-solid fa-lock"></i> Change Password
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="flex items-center gap-3 px-4 py-2 hover:bg-gray100">
+                                        <i class="fa-solid fa-right-to-bracket"></i> Login
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="flex items-center gap-3 px-4 py-2 hover:bg-red50 text-red500">
+                                        <i class="fa-solid fa-right-from-bracket"></i> Logout
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
