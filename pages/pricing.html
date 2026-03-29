@@ -292,7 +292,10 @@
 
             </header>
 
+            <!-- main page -->
             <div class="page__body p-6">
+
+                <!-- page header -->
                 <div class="header flex items-center justify-between mb-6">
                     <div>
                         <h1 class="text-[22px] font-bold text-[#0f172a]">JURA Pricing</h1>
@@ -306,8 +309,9 @@
                         Save Configuration
                     </button>
                 </div>
-                <div class="grid grid-cols-12 gap-4 jura_pricing">
 
+                <!-- page body -->
+                <div class="grid grid-cols-12 gap-4 jura_pricing">
                     <!-- Base Configuration -->
                     <div class="col-span-4">
                         <div class="card bg-white p-4 rounded-[16px] border border-[#E2E6EA] h-full">
@@ -405,10 +409,10 @@
                                     </div>
                                 </div>
 
-                                <div class="bottom-area">
+                                <div class="bottom-area-switch-content">
 
                                     <div
-                                        class="flex items-center justify-between group mb-4 pb-4 border-b border-[#E2E6EA]">
+                                        class="flex items-center justify-between group mb-4 pb-4 border-b border-[#E2E6EA] surge-toggle">
                                         <div class="space-y-0.5">
                                             <h3 class="font-semibold text-slate-800 text-[15px]">Surge Pricing (SURGE)
                                             </h3>
@@ -424,7 +428,7 @@
                                         </label>
                                     </div>
 
-                                    <div class="flex items-center justify-between group">
+                                    <div class="flex items-center justify-between group service-toggle">
                                         <div class="space-y-0.5">
                                             <h3 class="font-semibold text-slate-800 text-[15px]">Service Fee</h3>
                                             <p class="text-[13px] font-normal text-[#8D9BAD]">Platform revenue fee</p>
@@ -715,7 +719,7 @@
 
                                     </div>
 
-                                    <div class="bg-[#F1F3F5] rounded-[8px] p-3">
+                                    <div class="bg-[#F1F3F5] rounded-[8px] p-3 info-1">
                                         <div
                                             class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
                                             <span class="text-[#8D9BAD] font-normal text-[14px]">Base rate</span>
@@ -749,11 +753,55 @@
                                             <span class="text-[#A12CB1] text-[15px] font-semibold">542 XOF</span>
                                         </div>
                                     </div>
+                                    <div class="bg-[#F1F3F5] rounded-[8px] p-3 info-2 hidden">
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Base rate</span>
+                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">500 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Distance (8.5 x
+                                                150)</span>
+                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">1275 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Duration (25min x
+                                                20)</span>
+                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">500 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Surge x1.5</span>
+                                            <span class="text-[#FBBF24] text-[15px] font-semibold">1138 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Service fee</span>
+                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">200 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#4A5568] font-normal text-[14px]">Customer Total</span>
+                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">3613 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Est. Driver
+                                                Earnings</span>
+                                            <span class="text-[#10B981] text-[15px] font-semibold">2871 XOF</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Yoola Commission</span>
+                                            <span class="text-[#A12CB1] text-[15px] font-semibold">542 XOF</span>
+                                        </div>
+                                    </div>
 
                                 </div>
 
                                 <!-- express -->
-                                <div class="tab-content" id="express">
+                                <div class="tab-content hidden" id="express">
                                     <div class="mb-4">
                                         <div class="space-y-2">
                                             <label
@@ -863,7 +911,7 @@
 
                                     </div>
 
-                                    <div class="bg-[#F1F3F5] rounded-[8px] p-3">
+                                    <div class="bg-[#F1F3F5] rounded-[8px] p-3 info-1">
                                         <div
                                             class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
                                             <span class="text-[#8D9BAD] font-normal text-[14px]">Base rate</span>
@@ -897,12 +945,57 @@
                                             <span class="text-[#A12CB1] text-[15px] font-semibold">542 XOF</span>
                                         </div>
                                     </div>
+                                    <div class="bg-[#F1F3F5] rounded-[8px] p-3 info-2 hidden">
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Base rate</span>
+                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">500 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Distance (8.5 x
+                                                150)</span>
+                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">1275 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Duration (25min x
+                                                20)</span>
+                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">500 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Surge x1.5</span>
+                                            <span class="text-[#FBBF24] text-[15px] font-semibold">1138 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Service fee</span>
+                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">200 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#4A5568] font-normal text-[14px]">Customer Total</span>
+                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">3613 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Est. Driver
+                                                Earnings</span>
+                                            <span class="text-[#10B981] text-[15px] font-semibold">2871 XOF</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Yoola Commission</span>
+                                            <span class="text-[#A12CB1] text-[15px] font-semibold">542 XOF</span>
+                                        </div>
+                                    </div>
 
                                 </div>
 
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
