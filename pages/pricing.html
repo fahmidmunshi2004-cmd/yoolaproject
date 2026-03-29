@@ -25,6 +25,7 @@
     <!-- custom css -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/pricing.css">
 </head>
 
 <body>
@@ -213,7 +214,7 @@
                 <div class="right-content flex items-center gap-[10px]">
                     <form action="#" class="search mr-[14px]">
                         <div class="input relative">
-                            <input type="text" placeholder="Search  ..." class="min-w-[255px]">
+                            <input type="text" placeholder="Search  ..." class="custom-input min-w-[255px]">
                             <a href="#" class="absolute left-4 top-1/2 -translate-y-1/2">
                                 <img src="../assets/img/icons/search.svg" alt="">
                             </a>
@@ -290,6 +291,102 @@
                 </div>
 
             </header>
+
+            <div class="page__body p-6">
+                <div class="header flex items-center justify-between mb-6">
+                    <div>
+                        <h1 class="text-[22px] font-bold text-[#0f172a]">JURA Pricing</h1>
+                        <p class="text-[#8D9BAD] font-normal text-base mt-1">Configure delivery pricing, surge, and
+                            service
+                            fees</p>
+                    </div>
+
+                    <button
+                        class="bg-[#FBBF24] hover:bg-transparent hover:text-[#FBBF24] text-white font-medium py-3 px-7 rounded-full border border-[#FBBF24] transition-all duration-300 ease-in-out">
+                        Save Configuration
+                    </button>
+                </div>
+                <div class="grid grid-cols-12 jura_pricing">
+                    <div class="col-span-4">
+                        <div class="card bg-white p-4 rounded-[16px] border border-[#E2E6EA]">
+                            <div class="top mb-6">
+                                <h5 class="text-lg font-bold tracking-[-0.01em]">
+                                    Base Configuration
+                                </h5>
+                                <p class="text-[15px] font-normal text-[#8D9BAD]">
+                                    Core pricing parameters
+                                </p>
+                            </div>
+                            <div class="input-item">
+                                <div class="mb-4">
+                                    <div class="space-y-2">
+                                        <label
+                                            class="block text-base font-medium text-[#8D9BAD] uppercase tracking-widest">base
+                                            rate</label>
+                                        <div
+                                            class="flex h-12 rounded-xl border border-[#E2E6EA] overflow-hidden focus-within:border-[#fbbf24] transition-all">
+                                            <input type="number" value="500"
+                                                class="flex-1 px-4 bg-[#F1F3F5] text-lg font-normal outline-none w-full">
+                                            <div
+                                                class="w-16 flex items-center justify-center bg-white border-l border-[#E2E6EA] text-slate-400 text-[14px] font-normal">
+                                                XOF
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="space-y-2">
+                                        <label
+                                            class="block text-base font-medium text-[#8D9BAD] uppercase tracking-widest">Price
+                                            per km</label>
+                                        <div
+                                            class="flex h-12 rounded-xl border border-[#E2E6EA] overflow-hidden focus-within:border-[#fbbf24] transition-all">
+                                            <input type="number" value="150"
+                                                class="flex-1 px-4 bg-[#F1F3F5] text-lg font-normal outline-none w-full">
+                                            <div
+                                                class="w-16 flex items-center justify-center bg-white border-l border-[#E2E6EA] text-slate-400 text-[14px] font-normal">
+                                                XOF/km
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-8 pt-6 border-t border-gray-100 space-y-6">
+
+                                    <div class="flex items-center justify-between group">
+                                        <div class="space-y-0.5">
+                                            <h3 class="font-bold text-slate-800 text-[14px]">Surge Pricing (SURGE)</h3>
+                                            <p class="text-[12px] text-slate-400">Dynamic multiplier activation</p>
+                                        </div>
+
+                                        <label class="relative inline-flex items-center cursor-pointer">
+                                            <input type="checkbox" class="sr-only peer">
+                                            <div
+                                                class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:bg-[#ffcc00] after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all">
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    <div class="flex items-center justify-between group">
+                                        <div class="space-y-0.5">
+                                            <h3 class="font-bold text-slate-800 text-[14px]">Service Fee</h3>
+                                            <p class="text-[12px] text-slate-400">Platform revenue fee</p>
+                                        </div>
+
+                                        <label class="relative inline-flex items-center cursor-pointer">
+                                            <input type="checkbox" class="sr-only peer" checked>
+                                            <div
+                                                class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:bg-[#ffcc00] after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all">
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
