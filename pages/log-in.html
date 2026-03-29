@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoola</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="../assets/img/fav-icon/yoola-fav-icon.png" type="image/x-icon">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/log-in.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <section class="login-area flex items-center justify-center m-auto h-screen">
+        <div
+            class="login-content flex flex-col items-center justify-center gap-[30px] bg-white px-[30px] py-10  border border-[#E2E6EA] rounded-[16px]  min-w-[533px]">
+            <div class="logo">
+                <img src="../assets/img/logo/login-logo.png" alt="">
+            </div>
+
+            <div class="title flex flex-col items-center gap-[2px]">
+                <h5 class="font-bold text-[22px] tracking-[-0.01em] text-[#0D1828]">Welcome back</h5>
+                <p class="font-normal text-base  tracking-[-0.01em] text-[#8D9BAD]">Sign in to Yoola Back
+                    Office</p>
+            </div>
+            <div class="form w-full">
+                <form action="#">
+
+                    <div class="input-item mb-6">
+                        <div class="flex">
+                            <label>Email</label>
+
+                        </div>
+                        <div class="relative mt-[6px]">
+                            <input type="email" placeholder="admin@yoola.sn">
+                            <div class="img absolute left-4 top-[51.4%] -translate-y-1/2">
+                                <img src="../assets/img/icons/envelope-01.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-item mb-[30px]">
+                        <div class="flex items-center justify-between">
+                            <label>Password</label>
+                            <a href="#"
+                                class="text-base font-normal text-[#FBBF24] transition duration-200 hover:underline">
+                                Forgot password?
+                            </a>
+                        </div>
+
+                        <div class="relative mt-[6px]">
+                            <input id="password" type="password" placeholder="Enter your password"
+                                class="w-full pl-10 pr-10 py-2 border rounded">
+
+                            <!-- Left icon -->
+                            <div class="absolute left-4 top-1/2 -translate-y-1/2">
+                                <img src="../assets/img/icons/lock-01.png" alt="">
+                            </div>
+
+                            <!-- Toggle button -->
+                            <button type="button" id="togglePassword"
+                                class="absolute right-4 top-1/2 -translate-y-1/2 text-[#8D9BAD]">
+
+                                <i id="eyeOpen" class="fa-regular fa-eye-slash"></i>
+                                <i id="eyeClose" class="fa-regular fa-eye hidden"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="login-btn">
+                        <button
+                            class="bg-[#FBBF24] hover:bg-transparent hover:text-[#FBBF24] text-white font-medium h-10 lg:h-12 px-7 rounded-full border border-[#FBBF24] transition-all duration-300 ease-in-out w-full flex items-center gap-2 items-center justify-center">
+                            Log In
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <p class="text-[#8D9BAD] text-base font-normal flex items-center justify-center mt-4">
+                        Protected admin area · Contact Super Admin for access
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- js link -->
+    <script src="../js/toggle-password.js"></script>
+</body>
+
+</html>
