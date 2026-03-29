@@ -1,0 +1,117 @@
+@media (max-width: 1200px) {
+    .header-area .custom-input.min-w-\[255px\] {
+        width: max-content;
+        height: 38px;
+        min-width: inherit;
+        cursor: pointer;
+    }
+
+    .header-area .notification {
+        width: 38px;
+        height: 38px;
+    }
+
+    .header-area form.search {
+        margin-right: 0;
+    }
+
+    .header-area .dropdown .author-profile .author_img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .header-area .dropdown .dropdown-menu.top-\[65px\] {
+        top: 60px;
+    }
+
+    .notification-sts {
+        height: 16px;
+        margin: -4px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-area .custom-input.min-w-\[255px\] {
+        width: max-content;
+        height: 38px;
+        width: 150px;
+        min-width: inherit;
+        /* padding: 0; */
+        cursor: pointer;
+    }
+
+    /* .header-area .custom-input::placeholder {
+        color: transparent;
+    } */
+
+    /* .header-area .input a {
+        left: 50%;
+        transform: translateX(-50%);
+    } */
+
+    body.sidebar-collapsed .rs-sidebar-wrapper.active {
+        width: 250px;
+    }
+
+    body.sidebar-collapsed .sidebar-area.active span {
+        color: var(--gray-300);
+    }
+
+    body.sidebar-collapsed .sidebar-area.active .sidebar-list li a {
+        gap: 10px;
+        width: 100%;
+    }
+
+    body.sidebar-collapsed .sidebar-area.active .sidebar-author .icon {
+        margin: unset;
+        margin-left: auto;
+    }
+
+    body.sidebar-collapsed .sidebar-area.active .sidebar-author .author-left-content {
+        display: flex;
+    }
+
+    body.sidebar-collapsed .sidebar-area.active .side-bar-logo .small-logo {
+        left: 100px;
+        opacity: 0;
+    }
+
+    body.sidebar-collapsed .sidebar-area.active .side-bar-logo .big-logo {
+        left: 0;
+        opacity: 1;
+    }
+
+    body.sidebar-collapsed .sidebar-area.active .sidebar_close_icon {
+        display: flex;
+    }
+
+    body.sidebar-collapsed .sidebar-area .sidebar_close_icon {
+        display: none;
+    }
+
+    .sidebar_close_icon {
+        display: flex;
+    }
+}
+
+@media (max-width: 530px) {
+    .rs-sidebar-wrapper {
+        position: fixed;
+        transform: translateX(-100%);
+        transition: .3s linear;
+    }
+
+    body.sidebar-collapsed .page__body-wrapper {
+        width: calc(100%);
+    }
+
+    .rs-sidebar-wrapper.active {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 340px) {
+    .header-area {
+        height: max-content;
+    }
+}
