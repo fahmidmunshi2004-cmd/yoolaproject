@@ -306,9 +306,11 @@
                         Save Configuration
                     </button>
                 </div>
-                <div class="grid grid-cols-12 jura_pricing">
+                <div class="grid grid-cols-12 gap-4 jura_pricing">
+
+                    <!-- Base Configuration -->
                     <div class="col-span-4">
-                        <div class="card bg-white p-4 rounded-[16px] border border-[#E2E6EA]">
+                        <div class="card bg-white p-4 rounded-[16px] border border-[#E2E6EA] h-full">
                             <div class="top mb-6">
                                 <h5 class="text-lg font-bold tracking-[-0.01em]">
                                     Base Configuration
@@ -321,42 +323,97 @@
                                 <div class="mb-4">
                                     <div class="space-y-2">
                                         <label
-                                            class="block text-base font-medium text-[#8D9BAD] uppercase tracking-widest">base
+                                            class="block text-base font-medium text-[#8D9BAD] uppercase tracking-[-0.02em]">base
                                             rate</label>
                                         <div
                                             class="flex h-12 rounded-xl border border-[#E2E6EA] overflow-hidden focus-within:border-[#fbbf24] transition-all">
                                             <input type="number" value="500"
                                                 class="flex-1 px-4 bg-[#F1F3F5] text-lg font-normal outline-none w-full">
                                             <div
-                                                class="w-16 flex items-center justify-center bg-white border-l border-[#E2E6EA] text-slate-400 text-[14px] font-normal">
+                                                class="px-4 flex items-center justify-center bg-white border-l border-[#E2E6EA] text-slate-400 text-[14px] font-normal">
                                                 XOF
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="mb-4">
                                     <div class="space-y-2">
                                         <label
-                                            class="block text-base font-medium text-[#8D9BAD] uppercase tracking-widest">Price
+                                            class="block text-base font-medium text-[#8D9BAD] uppercase tracking-[-0.02em]">Price
                                             per km</label>
                                         <div
                                             class="flex h-12 rounded-xl border border-[#E2E6EA] overflow-hidden focus-within:border-[#fbbf24] transition-all">
                                             <input type="number" value="150"
                                                 class="flex-1 px-4 bg-[#F1F3F5] text-lg font-normal outline-none w-full">
                                             <div
-                                                class="w-16 flex items-center justify-center bg-white border-l border-[#E2E6EA] text-slate-400 text-[14px] font-normal">
+                                                class="px-4 flex items-center justify-center bg-white border-l border-[#E2E6EA] text-slate-400 text-[14px] font-normal">
                                                 XOF/km
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="mt-8 pt-6 border-t border-gray-100 space-y-6">
+                                <div class="mb-4">
+                                    <div class="space-y-2">
+                                        <label
+                                            class="block text-base font-medium text-[#8D9BAD] uppercase tracking-[-0.02em]">Price
+                                            per minute</label>
+                                        <div
+                                            class="flex h-12 rounded-xl border border-[#E2E6EA] overflow-hidden focus-within:border-[#fbbf24] transition-all">
+                                            <input type="number" value="20"
+                                                class="flex-1 px-4 bg-[#F1F3F5] text-lg font-normal outline-none w-full">
+                                            <div
+                                                class="px-4 flex items-center justify-center bg-white border-l border-[#E2E6EA] text-slate-400 text-[14px] font-normal">
+                                                XOF/min
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                    <div class="flex items-center justify-between group">
+                                <div class="mb-4">
+                                    <div class="space-y-2">
+                                        <label
+                                            class="block text-base font-medium text-[#8D9BAD] uppercase tracking-[-0.02em]">minimum
+                                            fare</label>
+                                        <div
+                                            class="flex h-12 rounded-xl border border-[#E2E6EA] overflow-hidden focus-within:border-[#fbbf24] transition-all">
+                                            <input type="number" value="800"
+                                                class="flex-1 px-4 bg-[#F1F3F5] text-lg font-normal outline-none w-full">
+                                            <div
+                                                class="px-4 flex items-center justify-center bg-white border-l border-[#E2E6EA] text-slate-400 text-[14px] font-normal">
+                                                XOF
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <div class="space-y-2">
+                                        <label
+                                            class="block text-base font-medium text-[#8D9BAD] uppercase tracking-[-0.02em]">maximum
+                                            fare</label>
+                                        <div
+                                            class="flex h-12 rounded-xl border border-[#E2E6EA] overflow-hidden focus-within:border-[#fbbf24] transition-all">
+                                            <input type="number" value="15000"
+                                                class="flex-1 px-4 bg-[#F1F3F5] text-lg font-normal outline-none w-full">
+                                            <div
+                                                class="px-4 flex items-center justify-center bg-white border-l border-[#E2E6EA] text-slate-400 text-[14px] font-normal">
+                                                XOF
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bottom-area">
+
+                                    <div
+                                        class="flex items-center justify-between group mb-4 pb-4 border-b border-[#E2E6EA]">
                                         <div class="space-y-0.5">
-                                            <h3 class="font-bold text-slate-800 text-[14px]">Surge Pricing (SURGE)</h3>
-                                            <p class="text-[12px] text-slate-400">Dynamic multiplier activation</p>
+                                            <h3 class="font-semibold text-slate-800 text-[15px]">Surge Pricing (SURGE)
+                                            </h3>
+                                            <p class="text-[13px] font-normal text-[#8D9BAD]">Dynamic multiplier
+                                                activation</p>
                                         </div>
 
                                         <label class="relative inline-flex items-center cursor-pointer">
@@ -369,12 +426,12 @@
 
                                     <div class="flex items-center justify-between group">
                                         <div class="space-y-0.5">
-                                            <h3 class="font-bold text-slate-800 text-[14px]">Service Fee</h3>
-                                            <p class="text-[12px] text-slate-400">Platform revenue fee</p>
+                                            <h3 class="font-semibold text-slate-800 text-[15px]">Service Fee</h3>
+                                            <p class="text-[13px] font-normal text-[#8D9BAD]">Platform revenue fee</p>
                                         </div>
 
                                         <label class="relative inline-flex items-center cursor-pointer">
-                                            <input type="checkbox" class="sr-only peer" checked>
+                                            <input type="checkbox" class="sr-only peer">
                                             <div
                                                 class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:bg-[#ffcc00] after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all">
                                             </div>
@@ -382,6 +439,467 @@
                                     </div>
 
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Surge Settings -->
+                    <div class="col-span-4">
+                        <div class="card bg-white p-4 rounded-[16px] border border-[#E2E6EA] h-full">
+                            <div class="top mb-6">
+                                <h5 class="text-lg font-bold tracking-[-0.01em]">
+                                    Surge Settings
+                                </h5>
+                                <p class="text-[15px] font-normal text-[#8D9BAD]">
+                                    Dynamic pricing multipliers
+                                </p>
+                            </div>
+
+                            <!-- Surge multiplier -->
+                            <div class="flex flex-col">
+                                <h4
+                                    class="block text-base font-medium text-[#8D9BAD] uppercase tracking-[-0.02em] mb-2">
+                                    Surge multiplier
+                                </h4>
+                                <div
+                                    class="surge-multiplier-button grid grid-cols-12 gap-[10px] mb-4 pb-4 border-b border-[#E2E6EA]">
+                                    <button class="col-span-3 h-12">x1</button>
+                                    <button class="col-span-3 h-12">x1.2</button>
+                                    <button class="col-span-3 h-12 custom__active">x1.5</button>
+                                    <button class="col-span-3 h-12">x2</button>
+
+                                    <div class="box custom__active col-span-12 p-4 rounded-[16px] w-full mt-[6px]">
+                                        <div class="flex items-center gap-2">
+                                            <svg width="10" height="15" viewBox="0 0 10 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.98778 0.000352627C5.91074 0.00413215 5.83992 0.0439015 5.79588 0.107275L0.0453939 8.35677C-0.0702256 8.52252 0.0483796 8.74986 0.250472 8.74985H4.22899L3.75145 14.7308C3.73277 14.9836 4.05887 15.1005 4.20506 14.8934L9.95555 6.64437C10.071 6.4788 9.95281 6.2517 9.75096 6.25131H5.77196L6.24998 0.269878C6.26198 0.119264 6.13866 -0.00757493 5.98778 0.000352627Z"
+                                                    fill="#FFBC42" />
+                                            </svg>
+                                            <h4 class="text-[15px] font-semibold text-[#FBBF24] mb-[5px]">
+                                                Surge Active: x1.5
+                                            </h4>
+                                        </div>
+                                        <p class="text-[13px] font-semibold text-[#8D9BAD]">
+                                            All deliveries currently apply x1.5 multiplier
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Service Fee -->
+                            <div class="flex flex-col mb-3">
+                                <h4 class="text-[15px] font-semibold mb-1">Service Fee</h4>
+                                <p class="text-[13px] font-normal text-[#8D9BAD]">Platform revenue configuration</p>
+                            </div>
+
+                            <div class="tab-wrapper">
+
+                                <!-- tab-btn -->
+                                <div class="tab-btn grid grid-cols-3 gap-[10px] mb-4">
+                                    <button data-tab="fixed" class="col-span-1 h-12 custom__active">Fixed</button>
+                                    <button data-tab="percent" class="col-span-1 h-12">Percent</button>
+                                    <button data-tab="mixed" class="col-span-1 h-12">Mixed</button>
+                                </div>
+
+                                <!-- Fixed -->
+                                <div class="tab-content" id="fixed">
+                                    <div class="mb-4">
+                                        <div class="space-y-2">
+                                            <label
+                                                class="block text-base font-medium text-[#8D9BAD] uppercase tracking-[-0.02em]">Fixed
+                                                amount</label>
+                                            <div
+                                                class="flex h-12 rounded-xl border border-[#E2E6EA] overflow-hidden focus-within:border-[#fbbf24] transition-all">
+                                                <input type="number" value="200"
+                                                    class="flex-1 px-4 bg-[#F1F3F5] text-lg font-normal outline-none w-full">
+                                                <div
+                                                    class="px-4 flex items-center justify-center bg-white border-l border-[#E2E6EA] text-slate-400 text-[14px] font-normal">
+                                                    XOF
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Percent -->
+                                <div class="tab-content hidden" id="percent">
+                                    <div class="mb-4">
+                                        <div class="space-y-2">
+                                            <label
+                                                class="block text-base font-medium text-[#8D9BAD] uppercase tracking-[-0.02em]">Percentage</label>
+                                            <div
+                                                class="flex h-12 rounded-xl border border-[#E2E6EA] overflow-hidden focus-within:border-[#fbbf24] transition-all">
+                                                <input type="number" value="3"
+                                                    class="flex-1 px-4 bg-[#F1F3F5] text-lg font-normal outline-none w-full">
+                                                <div
+                                                    class="px-4 flex items-center justify-center bg-white border-l border-[#E2E6EA] text-slate-400 text-[14px] font-normal">
+                                                    %
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Mixed -->
+                                <div class="tab-content hidden" id="mixed">
+                                    <div class="mb-4">
+                                        <div class="space-y-2">
+                                            <label
+                                                class="block text-base font-medium text-[#8D9BAD] uppercase tracking-[-0.02em]">Fixed
+                                                amount</label>
+                                            <div
+                                                class="flex h-12 rounded-xl border border-[#E2E6EA] overflow-hidden focus-within:border-[#fbbf24] transition-all">
+                                                <input type="number" value="200"
+                                                    class="flex-1 px-4 bg-[#F1F3F5] text-lg font-normal outline-none w-full">
+                                                <div
+                                                    class="px-4 flex items-center justify-center bg-white border-l border-[#E2E6EA] text-slate-400 text-[14px] font-normal">
+                                                    XOF
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <div class="space-y-2">
+                                            <label
+                                                class="block text-base font-medium text-[#8D9BAD] uppercase tracking-[-0.02em]">Percentage</label>
+                                            <div
+                                                class="flex h-12 rounded-xl border border-[#E2E6EA] overflow-hidden focus-within:border-[#fbbf24] transition-all">
+                                                <input type="number" value="3"
+                                                    class="flex-1 px-4 bg-[#F1F3F5] text-lg font-normal outline-none w-full">
+                                                <div
+                                                    class="px-4 flex items-center justify-center bg-white border-l border-[#E2E6EA] text-slate-400 text-[14px] font-normal">
+                                                    %
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Price Simulator -->
+                    <div class="col-span-4">
+                        <div class="card bg-white p-4 rounded-[16px] border border-[#E2E6EA] h-full">
+                            <div class="top mb-6">
+                                <h5 class="text-lg font-bold tracking-[-0.01em]">
+                                    Price Simulator
+                                </h5>
+                                <p class="text-[15px] font-normal text-[#8D9BAD]">
+                                    Test pricing in real-time
+                                </p>
+                            </div>
+
+                            <div class="tab-wrapper">
+                                <h4
+                                    class="block text-base font-medium text-[#8D9BAD] uppercase tracking-[-0.02em] mb-2">
+                                    Service type
+                                </h4>
+                                <!-- tab-btn -->
+                                <div class="tab-btn grid grid-cols-2 gap-[10px] mb-4">
+                                    <button data-tab="food" class="col-span-1 h-12 custom__active">Food</button>
+                                    <button data-tab="express" class="col-span-1 h-12">Express</button>
+                                </div>
+
+                                <!-- food -->
+                                <div class="tab-content" id="food">
+                                    <div class="mb-4">
+                                        <div class="space-y-2">
+                                            <label
+                                                class="block text-base font-medium text-[#8D9BAD] uppercase tracking-[-0.02em]">Distance</label>
+                                            <div
+                                                class="flex h-12 rounded-xl border border-[#E2E6EA] overflow-hidden focus-within:border-[#fbbf24] transition-all">
+                                                <input type="number" value="8.5"
+                                                    class="flex-1 px-4 bg-[#F1F3F5] text-lg font-normal outline-none w-full">
+                                                <div
+                                                    class="px-4 flex items-center justify-center bg-white border-l border-[#E2E6EA] text-slate-400 text-[14px] font-normal">
+                                                    km
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <div class="space-y-2">
+                                            <label
+                                                class="block text-base font-medium text-[#8D9BAD] uppercase tracking-[-0.02em]">duration</label>
+                                            <div
+                                                class="flex h-12 rounded-xl border border-[#E2E6EA] overflow-hidden focus-within:border-[#fbbf24] transition-all">
+                                                <input type="number" value="25"
+                                                    class="flex-1 px-4 bg-[#F1F3F5] text-lg font-normal outline-none w-full">
+                                                <div
+                                                    class="px-4 flex items-center justify-center bg-white border-l border-[#E2E6EA] text-slate-400 text-[14px] font-normal">
+                                                    min
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <div class="space-y-2">
+                                            <div>
+                                                <label
+                                                    class="block text-base font-medium text-[#8D9BAD] uppercase tracking-[-0.02em] mb-2">Zone</label>
+                                                <div class="relative">
+                                                    <div class="relative">
+                                                        <select
+                                                            class="w-full h-12 px-4 pr-10 rounded-xl border border-[#E2E6EA] bg-[#F1F3F5] text-slate-700 font-medium appearance-none outline-none focus:border-[#FBBF24]">
+
+                                                            <option>Standard (Cocody, Plateau)</option>
+                                                            <option>Zone A (Downtown)</option>
+                                                            <option>Zone B (Suburban)</option>
+                                                            <option>Zone C (High Demand)</option>
+                                                            <option>Airport Zone</option>
+
+                                                        </select>
+
+                                                        <!-- dropdown icon -->
+                                                        <div
+                                                            class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                                                            <i
+                                                                class="fa-solid fa-chevron-down text-[#8D9BAD] text-xs"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                                                        <i class="fa-solid fa-chevron-down text-[#8D9BAD] text-xs"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-4 mb-4">
+
+                                        <label class="flex items-center gap-2 cursor-pointer group custom-check-box">
+
+                                            <input type="checkbox" checked class="peer hidden" checked>
+
+                                            <!-- custom checkbox -->
+                                            <div
+                                                class="w-5 h-5 flex items-center justify-center rounded-[8px] border border-[#8D9BAD] bg-white peer-checked:bg-[#FBBF24] peer-checked:border-[#FBBF24] transition-all">
+
+                                                <!-- tick -->
+                                                <svg class="w-4 h-4 text-white peer-checked:opacity-100"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="3">
+                                                    <path d="M5 13l4 4L19 7" />
+                                                </svg>
+
+                                            </div>
+
+                                            <span class="text-[15px] font-medium text-[#4A5568]">Night</span>
+                                        </label>
+
+                                        <label class="flex items-center gap-2 cursor-pointer group custom-check-box">
+                                            <input type="checkbox" class="peer hidden">
+
+                                            <!-- custom checkbox -->
+                                            <div
+                                                class="w-5 h-5 flex items-center justify-center rounded-[8px] border border-[#8D9BAD] bg-white peer-checked:bg-[#FBBF24] peer-checked:border-[#FBBF24] transition-all">
+
+                                                <!-- tick -->
+                                                <svg class="w-4 h-4 text-white peer-checked:opacity-100"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="3">
+                                                    <path d="M5 13l4 4L19 7" />
+                                                </svg>
+
+                                            </div>
+
+                                            <span class="text-[15px] font-medium text-[#4A5568]">Fragile</span>
+                                        </label>
+
+                                    </div>
+
+                                    <div class="bg-[#F1F3F5] rounded-[8px] p-3">
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Base rate</span>
+                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">500 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Distance (8.5 x
+                                                150)</span>
+                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">1275 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Duration (25min x
+                                                20)</span>
+                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">500 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#4A5568] font-normal text-[14px]">Customer Total</span>
+                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">3613 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Est. Driver
+                                                Earnings</span>
+                                            <span class="text-[#10B981] text-[15px] font-semibold">2871 XOF</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Yoola Commission</span>
+                                            <span class="text-[#A12CB1] text-[15px] font-semibold">542 XOF</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- express -->
+                                <div class="tab-content" id="express">
+                                    <div class="mb-4">
+                                        <div class="space-y-2">
+                                            <label
+                                                class="block text-base font-medium text-[#8D9BAD] uppercase tracking-[-0.02em]">Distance</label>
+                                            <div
+                                                class="flex h-12 rounded-xl border border-[#E2E6EA] overflow-hidden focus-within:border-[#fbbf24] transition-all">
+                                                <input type="number" value="8.5"
+                                                    class="flex-1 px-4 bg-[#F1F3F5] text-lg font-normal outline-none w-full">
+                                                <div
+                                                    class="px-4 flex items-center justify-center bg-white border-l border-[#E2E6EA] text-slate-400 text-[14px] font-normal">
+                                                    km
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <div class="space-y-2">
+                                            <label
+                                                class="block text-base font-medium text-[#8D9BAD] uppercase tracking-[-0.02em]">duration</label>
+                                            <div
+                                                class="flex h-12 rounded-xl border border-[#E2E6EA] overflow-hidden focus-within:border-[#fbbf24] transition-all">
+                                                <input type="number" value="25"
+                                                    class="flex-1 px-4 bg-[#F1F3F5] text-lg font-normal outline-none w-full">
+                                                <div
+                                                    class="px-4 flex items-center justify-center bg-white border-l border-[#E2E6EA] text-slate-400 text-[14px] font-normal">
+                                                    min
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <div class="space-y-2">
+                                            <div>
+                                                <label
+                                                    class="block text-base font-medium text-[#8D9BAD] uppercase tracking-[-0.02em] mb-2">Zone</label>
+                                                <div class="relative">
+                                                    <div class="relative">
+                                                        <select
+                                                            class="w-full h-12 px-4 pr-10 rounded-xl border border-[#E2E6EA] bg-[#F1F3F5] text-slate-700 font-medium appearance-none outline-none focus:border-[#FBBF24]">
+
+                                                            <option>Standard (Cocody, Plateau)</option>
+                                                            <option>Zone A (Downtown)</option>
+                                                            <option>Zone B (Suburban)</option>
+                                                            <option>Zone C (High Demand)</option>
+                                                            <option>Airport Zone</option>
+
+                                                        </select>
+
+                                                        <!-- dropdown icon -->
+                                                        <div
+                                                            class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                                                            <i
+                                                                class="fa-solid fa-chevron-down text-[#8D9BAD] text-xs"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                                                        <i class="fa-solid fa-chevron-down text-[#8D9BAD] text-xs"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-4 mb-4">
+
+                                        <label class="flex items-center gap-2 cursor-pointer group custom-check-box">
+
+                                            <input type="checkbox" checked class="peer hidden" checked>
+
+                                            <!-- custom checkbox -->
+                                            <div
+                                                class="w-5 h-5 flex items-center justify-center rounded-[8px] border border-[#8D9BAD] bg-white peer-checked:bg-[#FBBF24] peer-checked:border-[#FBBF24] transition-all">
+
+                                                <!-- tick -->
+                                                <svg class="w-4 h-4 text-white peer-checked:opacity-100"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="3">
+                                                    <path d="M5 13l4 4L19 7" />
+                                                </svg>
+
+                                            </div>
+
+                                            <span class="text-[15px] font-medium text-[#4A5568]">Night</span>
+                                        </label>
+
+                                        <label class="flex items-center gap-2 cursor-pointer group custom-check-box">
+                                            <input type="checkbox" class="peer hidden">
+
+                                            <!-- custom checkbox -->
+                                            <div
+                                                class="w-5 h-5 flex items-center justify-center rounded-[8px] border border-[#8D9BAD] bg-white peer-checked:bg-[#FBBF24] peer-checked:border-[#FBBF24] transition-all">
+
+                                                <!-- tick -->
+                                                <svg class="w-4 h-4 text-white peer-checked:opacity-100"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="3">
+                                                    <path d="M5 13l4 4L19 7" />
+                                                </svg>
+
+                                            </div>
+
+                                            <span class="text-[15px] font-medium text-[#4A5568]">Fragile</span>
+                                        </label>
+
+                                    </div>
+
+                                    <div class="bg-[#F1F3F5] rounded-[8px] p-3">
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Base rate</span>
+                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">500 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Distance (8.5 x
+                                                150)</span>
+                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">1275 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Duration (25min x
+                                                20)</span>
+                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">500 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#4A5568] font-normal text-[14px]">Customer Total</span>
+                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">3613 XOF</span>
+                                        </div>
+                                        <div
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Est. Driver
+                                                Earnings</span>
+                                            <span class="text-[#10B981] text-[15px] font-semibold">2871 XOF</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Yoola Commission</span>
+                                            <span class="text-[#A12CB1] text-[15px] font-semibold">542 XOF</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -393,6 +911,7 @@
     <!-- js link -->
     <script src="../js/dropdown.js"></script>
     <script src="../js/sidebar-collapsed.js"></script>
+    <script src="../js/tab.js"></script>
 </body>
 
 </html>

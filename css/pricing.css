@@ -1,1 +1,15 @@
-.jura_pricing .input-item {}
+.tab-btn button,
+.surge-multiplier-button button {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--gray-300);
+    background: #fff;
+    border: 1px solid var(--gray-100);
+    border-radius: 100px;
+    transition: .2s linear;
+}
+
+.tab-btn button:hover,
+.surge-multiplier-button button:hover {
+    background: var(--gray-50);
+}

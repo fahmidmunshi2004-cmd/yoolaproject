@@ -123,3 +123,10 @@ button {
     opacity: 1;
     visibility: visible;
 }
+
+/* custom__active */
+.custom__active {
+    border: 1px solid var(--yellow-400) !important;
+    background: var(--yellow-50) !important;
+    color: var(--yellow-400) !important;
+}
