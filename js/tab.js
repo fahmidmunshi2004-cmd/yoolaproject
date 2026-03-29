@@ -24,24 +24,34 @@ document.querySelectorAll('.tab-wrapper').forEach(wrapper => {
 //======================================== switch tab ===========================================//
 document.addEventListener("DOMContentLoaded", function () {
 
-    const surgeToggle = document.querySelector(".surge-toggle input[type='checkbox']");
+    // toggles //
+    const surgeToggle = document.querySelector(".surge-price-toggle input[type='checkbox']");
     const serviceToggle = document.querySelector(".service-toggle input[type='checkbox']");
 
-    const info1 = document.querySelectorAll(".info-1");
-    const info2 = document.querySelectorAll(".info-2");
+    // elements //
+    const surgeEls = document.querySelectorAll(".surge-pricing");
+    const serviceEls = document.querySelectorAll(".service-fee");
 
-    function updateInfo() {
-        if (surgeToggle.checked && serviceToggle.checked) {
-            info1.forEach(el => el.classList.add("hidden"));
-            info2.forEach(el => el.classList.remove("hidden"));
-        } else {
-            info1.forEach(el => el.classList.remove("hidden"));
-            info2.forEach(el => el.classList.add("hidden"));
-        }
+    function toggleElements(elements, isVisible) {
+        elements.forEach(el => {
+            el.classList.toggle("hidden", !isVisible);
+        });
     }
 
-    // event listeners //
-    surgeToggle.addEventListener("change", updateInfo);
-    serviceToggle.addEventListener("change", updateInfo);
+    function updateUI() {
+
+        const isSurgeOn = surgeToggle?.checked;
+        const isServiceOn = serviceToggle?.checked;
+
+        toggleElements(surgeEls, isSurgeOn);
+        toggleElements(serviceEls, isServiceOn);
+    }
+
+    // events //
+    surgeToggle?.addEventListener("change", updateUI);
+    serviceToggle?.addEventListener("change", updateUI);
+
+    // initial run //
+    updateUI();
 
 });

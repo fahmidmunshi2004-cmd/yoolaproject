@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yoola Pricing</title>
+    <title>Yoola</title>
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,7 +68,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="../pages/operations.html">
                                 <img src="../assets/img/icons/bag-01.svg" alt="">
                                 <span>Operations</span>
                             </a>
@@ -534,7 +534,7 @@
                                 <div class="bottom-area-switch-content">
 
                                     <div
-                                        class="flex items-center justify-between group mb-4 pb-4 border-b border-[#E2E6EA] surge-toggle">
+                                        class="flex items-center justify-between group mb-4 pb-4 border-b border-[#E2E6EA]">
                                         <div class="space-y-0.5">
                                             <h3 class="font-semibold text-slate-800 text-[15px]">Surge Pricing (SURGE)
                                             </h3>
@@ -542,7 +542,8 @@
                                                 activation</p>
                                         </div>
 
-                                        <label class="relative inline-flex items-center cursor-pointer">
+                                        <label
+                                            class="relative inline-flex items-center cursor-pointer surge-price-toggle">
                                             <input type="checkbox" class="sr-only peer">
                                             <div
                                                 class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:bg-[#ffcc00] after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all">
@@ -550,16 +551,16 @@
                                         </label>
                                     </div>
 
-                                    <div class="flex items-center justify-between group service-toggle">
+                                    <div class="flex items-center justify-between group">
                                         <div class="space-y-0.5">
                                             <h3 class="font-semibold text-slate-800 text-[15px]">Service Fee</h3>
                                             <p class="text-[13px] font-normal text-[#8D9BAD]">Platform revenue fee</p>
                                         </div>
 
-                                        <label class="relative inline-flex items-center cursor-pointer">
+                                        <label class="relative inline-flex items-center cursor-pointer service-toggle">
                                             <input type="checkbox" class="sr-only peer">
                                             <div
-                                                class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:bg-[#ffcc00] after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all">
+                                                class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:bg-[#ffcc00] after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all service-fee-toggle">
                                             </div>
                                         </label>
                                     </div>
@@ -594,7 +595,8 @@
                                     <button class="col-span-3 h-12 custom__active">x1.5</button>
                                     <button class="col-span-3 h-12">x2</button>
 
-                                    <div class="box custom__active col-span-12 p-4 rounded-[16px] w-full mt-[6px]">
+                                    <div
+                                        class="box custom__active col-span-12 p-4 rounded-[16px] w-full mt-[6px] surge-pricing hidden">
                                         <div class="flex items-center gap-2">
                                             <svg width="10" height="15" viewBox="0 0 10 15" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -841,7 +843,7 @@
 
                                     </div>
 
-                                    <div class="bg-[#F1F3F5] rounded-[8px] p-3 info-1">
+                                    <div class="bg-[#F1F3F5] rounded-[8px] p-3">
                                         <div
                                             class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
                                             <span class="text-[#8D9BAD] font-normal text-[14px]">Base rate</span>
@@ -860,47 +862,14 @@
                                             <span class="text-[#0F1B2D] text-[15px] font-semibold">500 XOF</span>
                                         </div>
                                         <div
-                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
-                                            <span class="text-[#4A5568] font-normal text-[14px]">Customer Total</span>
-                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">3613 XOF</span>
-                                        </div>
-                                        <div
-                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
-                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Est. Driver
-                                                Earnings</span>
-                                            <span class="text-[#10B981] text-[15px] font-semibold">2871 XOF</span>
-                                        </div>
-                                        <div class="flex justify-between items-center">
-                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Yoola Commission</span>
-                                            <span class="text-[#A12CB1] text-[15px] font-semibold">542 XOF</span>
-                                        </div>
-                                    </div>
-                                    <div class="bg-[#F1F3F5] rounded-[8px] p-3 info-2 hidden">
-                                        <div
-                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
-                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Base rate</span>
-                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">500 XOF</span>
-                                        </div>
-                                        <div
-                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
-                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Distance (8.5 x
-                                                150)</span>
-                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">1275 XOF</span>
-                                        </div>
-                                        <div
-                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
-                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Duration (25min x
-                                                20)</span>
-                                            <span class="text-[#0F1B2D] text-[15px] font-semibold">500 XOF</span>
-                                        </div>
-                                        <div
-                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA] surge-pricing hidden">
                                             <span class="text-[#8D9BAD] font-normal text-[14px]">Surge x1.5</span>
                                             <span class="text-[#FBBF24] text-[15px] font-semibold">1138 XOF</span>
                                         </div>
                                         <div
-                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA]">
-                                            <span class="text-[#8D9BAD] font-normal text-[14px]">Service fee</span>
+                                            class="flex justify-between items-center pb-3 mb-3 border-b border-[#E2E6EA] service-fee hidden">
+                                            <span class="text-[#8D9BAD] font-normal text-[14px] ">Service
+                                                fee</span>
                                             <span class="text-[#0F1B2D] text-[15px] font-semibold">200 XOF</span>
                                         </div>
                                         <div
