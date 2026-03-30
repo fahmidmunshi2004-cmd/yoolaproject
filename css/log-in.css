@@ -32,3 +32,48 @@
 .login-area form .input-item input:focus::placeholder {
     color: transparent;
 }
+
+.pass__label {
+    border-radius: 25px;
+    height: 6px;
+    background: var(--gray-100);
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s linear;
+}
+
+.pass__label::after {
+    content: "";
+    position: absolute;
+    background: var(--yellow-400);
+    width: 0%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 25px;
+    transition: width 0.3s linear;
+}
+
+.pass__label.active::after {
+    width: 100%;
+}
+
+.pass__label__character__full.strong .pass__label::after {
+    background: var(--green-500);
+}
+
+.pass__label__character__full.strong .pass__label {
+    background: var(--gray-100);
+}
+
+.pass__label::after {
+    transition: width 0.3s linear, background 0.3s ease;
+}
+
+.pass__rules ul li.active {
+    color: var(--gray-400);
+}
+
+.pass__rules ul li.active i {
+    color: var(--green-500);
+}

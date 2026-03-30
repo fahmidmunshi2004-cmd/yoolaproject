@@ -122,6 +122,7 @@ button {
     transition: 0.3s ease;
 }
 
+
 .dropdown-menu.active {
     transform: scaleY(1);
     opacity: 1;
@@ -133,6 +134,28 @@ button {
     border: 1px solid var(--yellow-400) !important;
     background: var(--yellow-50) !important;
     color: var(--yellow-400) !important;
+}
+
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    height: 8px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gray-50);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--yellow-400);
+    border-radius: 50px;
+    border-radius: 50px;
+    transition: .2s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--yellow-400);
 }
 
 

@@ -39,7 +39,7 @@
 
             <div class="title flex flex-col items-center gap-[2px]">
                 <h5 class="font-bold text-[22px] tracking-[-0.01em] text-[#0D1828]">Welcome back</h5>
-                <p class="font-normal text-base  tracking-[-0.01em] text-[#8D9BAD]">Sign in to Yoola Back
+                <p class="font-normal text-base text-center tracking-[-0.01em] text-[#8D9BAD]">Sign in to Yoola Back
                     Office</p>
             </div>
             <div class="form w-full">
@@ -51,7 +51,7 @@
 
                         </div>
                         <div class="relative mt-[6px]">
-                            <input type="email" placeholder="admin@yoola.sn">
+                            <input type="email" name="email" placeholder="admin@yoola.sn">
                             <div class="img absolute left-4 top-[51.4%] -translate-y-1/2">
                                 <img src="../assets/img/icons/envelope-01.png" alt="">
                             </div>
@@ -68,8 +68,8 @@
                         </div>
 
                         <div class="relative mt-[6px]">
-                            <input id="password" type="password" placeholder="Enter your password"
-                                class="w-full pl-10 pr-10 py-2 border rounded">
+                            <input type="password" name="password" placeholder="Enter your password"
+                                class="w-full pl-10 pr-10 py-2 border rounded show__password">
 
                             <!-- Left icon -->
                             <div class="absolute left-4 top-1/2 -translate-y-1/2">
@@ -80,8 +80,8 @@
                             <button type="button" id="togglePassword"
                                 class="absolute right-4 top-1/2 -translate-y-1/2 text-[#8D9BAD]">
 
-                                <i id="eyeOpen" class="fa-regular fa-eye-slash"></i>
-                                <i id="eyeClose" class="fa-regular fa-eye hidden"></i>
+                                <i class="fa-regular fa-eye-slash show__password"></i>
+                                <i class="fa-regular fa-eye hidden hide__password"></i>
                             </button>
                         </div>
                     </div>
