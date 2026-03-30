@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoola</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="../assets/img/fav-icon/yoola-fav-icon.png" type="image/x-icon">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/operations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+
+    <!-- Order__Details -->
+    <section id="Order__Details" class="modal_container">
+        <!-- modal content -->
+        <div class="modal_content !p-0 !w-[700px]">
+            <form action="#" class="form">
+                <div class="flex justify-between items-center p-6 mb-6 pb-6 border-b border-[#E2E6EA]">
+                    <h3 class="text-[#0F1B2D] text-xl font-bold ">Order Details — FO-1000</h3>
+                    <button type="button" onclick="toggleModal('Order__Details')"
+                        class="w-8 h-8 border-2 border-[#EF4444] flex text-[#EF4444] rounded-lg">
+                        <i class="fa-solid fa-xmark transition !flex items-center justify-center duration-300 hover:rotate-90
+                        h-full w-full leading-[2.3]"></i>
+                    </button>
+                </div>
+
+                <div class="body p-6 pt-0">
+                    <div class="grid grid-cols-2">
+
+                        <div class="col-span-1">
+                            <div class="left-side flex flex-col gap-[20px]">
+                                <div class="item">
+                                    <h5 class="text-base font-normal text-[#8D9BAD] uppercase">
+                                        id
+                                    </h5>
+                                    <h2 class="text-[20px] font-medium text-[30F1B2D]">
+                                        FO-1000
+                                    </h2>
+                                </div>
+                                <div class="item">
+                                    <h5 class="text-base font-normal text-[#8D9BAD] uppercase">
+                                        restaurant
+                                    </h5>
+                                    <h2 class="text-[20px] font-medium text-[30F1B2D]">
+                                        Le Djolof
+                                    </h2>
+                                </div>
+                                <div class="item">
+                                    <h5 class="text-base font-normal text-[#8D9BAD] uppercase">
+                                        total
+                                    </h5>
+                                    <h2 class="text-[20px] font-medium text-[30F1B2D]">
+                                        16833 XOF
+                                    </h2>
+                                </div>
+                                <div class="item">
+                                    <h5 class="text-base font-normal text-[#8D9BAD] uppercase">
+                                        driver
+                                    </h5>
+                                    <h2 class="text-[20px] font-medium text-[30F1B2D]">
+                                        Cheikh Ndiaye
+                                    </h2>
+                                </div>
+                                <div class="item">
+                                    <h5 class="text-base font-normal text-[#8D9BAD] uppercase">
+                                        address
+                                    </h5>
+                                    <h2 class="text-[20px] font-medium text-[30F1B2D]">
+                                        Almadies
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-span-1">
+                            <div class="right-side flex flex-col gap-[20px]">
+                                <div class="item">
+                                    <h5 class="text-base font-normal text-[#8D9BAD] uppercase">
+                                        Customer
+                                    </h5>
+                                    <h2 class="text-[20px] font-medium text-[30F1B2D]">
+                                        Amadou Diallo
+                                    </h2>
+                                </div>
+                                <div class="item">
+                                    <h5 class="text-base font-normal text-[#8D9BAD] uppercase">
+                                        Items
+                                    </h5>
+                                    <h2 class="text-[20px] font-medium text-[30F1B2D]">
+                                        2
+                                    </h2>
+                                </div>
+                                <div class="item">
+                                    <h5 class="text-base font-normal text-[#8D9BAD] uppercase mb-2">
+                                        status
+                                    </h5>
+                                    <div class="text-[20px] font-medium text-[30F1B2D]">
+                                        <h2
+                                            class="bg-[#FEF3C7] text-[#FBBF24] h-5 px-[8px] rounded-[18px] w-max flex items-center justify-center text-[12px] font-medium">
+                                            Pending
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <h5 class="text-base font-normal text-[#8D9BAD] uppercase">
+                                        time
+                                    </h5>
+                                    <h2 class="text-[20px] font-medium text-[30F1B2D]">
+                                        30 min ago
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- backdrop modal -->
+        <div onclick="toggleModal('Order__Details')" class="modal_backdrop"></div>
+    </section>
+
+    <!-- gps__tracking -->
+    <section id="gps__tracking" class="modal_container">
+        <!-- modal content -->
+        <div class="modal_content !p-0 !w-[700px]">
+            <form action="#" class="form">
+                <div class="flex justify-between items-center p-6 mb-6 pb-6 border-b border-[#E2E6EA]">
+                    <h3 class="text-[#0F1B2D] text-xl font-bold ">GPS Tracking — FO-1009</h3>
+                    <button type="button" onclick="toggleModal('gps__tracking')"
+                        class="w-8 h-8 border-2 border-[#EF4444] flex text-[#EF4444] rounded-lg">
+                        <i class="fa-solid fa-xmark transition !flex items-center justify-center duration-300 hover:rotate-90
+                        h-full w-full leading-[2.3]"></i>
+                    </button>
+                </div>
+
+                <div class="body p-6 pt-0">
+                    <div class="map h-[337px] w-full rounded-[8px] overflow-hidden mb-6">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4664.848255104071!2d77.23243434071152!3d28.58318030932941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2f93178ea85%3A0x639d387dcb58c69!2sJawaharlal%20Nehru%20Stadium%2C%20Delhi!5e1!3m2!1sen!2sbd!4v1774863316795!5m2!1sen!2sbd"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="grid grid-cols-3 gap-[22px]">
+                        <div class="col-span-1">
+                            <div
+                                class="card flex flex-col items-center justify-center bg-[#E2E6EA] rounded-[8px] h-[85px]">
+                                <h4 class="text-[#0F1B2D] text-[28px] font-bold">2.3</h4>
+                                <p class="text-base font-normal text-[#8D9BAD]">km remaining</p>
+                            </div>
+                        </div>
+                        <div class="col-span-1">
+
+                            <div
+                                class="card flex flex-col items-center justify-center bg-[#E2E6EA] rounded-[8px] h-[85px]">
+                                <h4 class="text-[#0F1B2D] text-[28px] font-bold">8</h4>
+                                <p class="text-base font-normal text-[#8D9BAD]">min ETA</p>
+                            </div>
+                        </div>
+                        <div class="col-span-1">
+
+                            <div
+                                class="card flex flex-col items-center justify-center bg-[#E2E6EA] rounded-[8px] h-[85px]">
+                                <h4 class="text-[#0F1B2D] text-[28px] font-bold">32</h4>
+                                <p class="text-base font-normal text-[#8D9BAD]">km/h speed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- backdrop modal -->
+        <div onclick="toggleModal('gps__tracking')" class="modal_backdrop"></div>
+    </section>
+
+    <!-- cancel__order -->
+    <section id="cancel__order" class="modal_container">
+        <!-- modal content -->
+        <div class="modal_content !p-0 !w-[550px]">
+            <form action="#" class="form">
+                <div class="flex justify-between items-center p-6 mb-6 pb-6 border-b border-[#E2E6EA]">
+                    <h3 class="text-[#0F1B2D] text-xl font-bold ">Cancel Order — FO-1004</h3>
+                    <button type="button" onclick="toggleModal('cancel__order')"
+                        class="w-8 h-8 border-2 border-[#EF4444] flex text-[#EF4444] rounded-lg">
+                        <i class="fa-solid fa-xmark transition !flex items-center justify-center duration-300 hover:rotate-90
+                        h-full w-full leading-[2.3]"></i>
+                    </button>
+                </div>
+
+                <div class="body p-6 pt-0">
+
+                    <p class="text-xl font-normal text-[#4A5568] mb-6">
+                        This will cancel the order and notify the customer.
+                    </p>
+
+                    <div class="w-full flex flex-col">
+                        <label class="text-[18px] font-semibold text-[#8D9BAD]">REASON FOR CANCELLATION</label>
+                        <textarea name="Message" id="Message" placeholder="Enter reason ..."
+                            class="mt-2 custom-textarea mb-6 bg-[#F1F3F5] !h-[113px]"></textarea>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+
+                        <button type="button" onclick="toggleModal('cancel__order')"
+                            class="group bg-[#FEE2E2] hover:bg-[#EF4444] text-base text-[#EF4444] hover:text-[#fff] text-[#8D9BAD] font-medium h-10 lg:h-12 px-7 rounded-full border border-[#FEE2E2] hover:border-[#FBBF24] transition duration-300 ease-in-out ml-auto flex items-center gap-4">
+                            Cancel
+                        </button>
+                        <button type="submit"
+                            class="group bg-[#fffbeb] hover:bg-[#FBBF24] text-base hover:text-[#fff] text-[#fbbf24] font-medium h-10 lg:h-12 px-7 rounded-full border border-[#fbbf24] hover:border-[#FBBF24] transition duration-300 ease-in-out flex items-center gap-4">
+                            Confirm Cancellation
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- backdrop modal -->
+        <div onclick="toggleModal('cancel__order')" class="modal_backdrop"></div>
+    </section>
+
+
+    <div class="grid grid-cols-12">
+        <!-- sidebar -->
+        <section
+            class="rs-sidebar-wrapper  sidebar-area w-[307px] bg-white col-span-2 border-r border-[#E2E6EA] fixed left-0 top-0 z-[99] h-full overflow-y-scroll scrollbar-none">
+
+            <!-- sidebar-header -->
+            <div
+                class="header h-[84px] p-4 border-b border-[#E2E6EA] flex flex-col justify-center sticky top-0 z-10 bg-white relative">
+                <div class="logo">
+                    <a href="#" class="side-bar-logo flex items-center relative">
+                        <img class="absolute left-0 big-logo" src="../assets/img/logo/main-logo.png" alt="">
+                        <img class="absolute right-[-70px] small-logo" src="../assets/img/fav-icon/yoola-fav-icon.png"
+                            alt="">
+                    </a>
+                    <div
+                        class="sidebar_close_icon absolute right-2 top-2 w-7 h-7 rounded-[4px] border border-[#FBBF24] text-[#FBBF24] flex items-center justify-center hidden">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- sidebar-main-content -->
+            <div class="main-content p-4">
+
+                <!-- Core -->
+                <div class="item mb-8">
+                    <h4 class="text-[#C5CDD5] text-sm font-medium mb-4 uppercase">
+                        Core
+                    </h4>
+
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/objects-column.svg" alt="">
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/operations-all.html" class="active">
+                                <img src="../assets/img/icons/bag-01.svg" alt="">
+                                <span>Operations</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/room-service.svg" alt="">
+                                <span>Restaurants</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/delivery-man.svg" alt="">
+                                <span>Drivers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/user-basket.svg" alt="">
+                                <span>Customers</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- finance -->
+                <div class="item mb-8">
+                    <h4 class="text-[#C5CDD5] text-sm font-medium mb-4 uppercase">
+                        finance
+                    </h4>
+
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/chart-pie-alt.svg" alt="">
+                                <span>Finance</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/pricing.html">
+                                <img src="../assets/img/icons/align-center.svg" alt="">
+                                <span>JURA Pricing</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Growth -->
+                <div class="item mb-8">
+                    <h4 class="text-[#C5CDD5] text-sm font-medium mb-4 uppercase">
+                        Growth
+                    </h4>
+
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/bullseye-arrow.svg" alt="">
+                                <span>Marketing</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/gift-01.svg" alt="">
+                                <span>Referrals</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/document.svg" alt="">
+                                <span>Blog & Content</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="item mb-8">
+                    <h4 class="text-[#C5CDD5] text-sm font-medium mb-4 uppercase">
+                        Support
+                    </h4>
+
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/headphone.svg" alt="">
+                                <span>Support</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- system -->
+                <div class="item mb-8">
+                    <h4 class="text-[#C5CDD5] text-sm font-medium mb-4 uppercase">
+                        system
+                    </h4>
+
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/setting-01.svg" alt="">
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- sign out -->
+                <div class="sidebar-author flex items-center gap-4 py-7 pb-0 border-t border-[#E2E6EA] mt-[80px]">
+                    <div class="author-left-content flex gap-4 items-center">
+                        <a href="#">
+                            <img class="sidebar-author-img w-11 h-11 rounded-full object-cover"
+                                src="../assets/img/author/author-01.png" alt="">
+                        </a>
+                        <div class="sidebar-info">
+                            <h5 class="text-lg font-semibold">Super Admin</h5>
+                            <span class="text-base font-normal text-[#8D9BAD]">admin@yoola.sn</span>
+                        </div>
+                    </div>
+                    <div class="icon ml-auto">
+                        <a href="#">
+                            <img src="../assets/img/icons/exit.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="page__body-wrapper  main-content col-span-10 absolute right-0 w-[calc(100%-307px)]">
+            <!-- header -->
+            <header
+                class="header-area h-[84px] flex items-center justify-between p-6 bg-white border-b border-[#E2E6EA] sticky top-0 z-10 bg-white flex-wrap gap-3">
+
+                <!-- header left-->
+                <div class="left-content flex items-center gap-10">
+                    <button class="sidebar-toggle-btn">
+                        <img src="../assets/img/icons/menu-burger.svg" alt="">
+                    </button>
+                    <div class="title flex items-center gap-[10px] hidden md:flex">
+                        <h3 class="text-base font-normal text-[#8D9BAD]">Yoola Admin</h3>
+                        <img src="../assets/img/icons/right-arrow.svg" alt="">
+                        <h4 class="text-base font-semibold text-[#0D1828]">Operations</h4>
+                    </div>
+                </div>
+
+                <!-- header right-->
+                <div class="right-content flex flex-wrep items-center gap-[10px]">
+                    <form action="#" class="search mr-[14px]">
+                        <div class="input relative">
+                            <input name="search" type="text" placeholder="Search  ..."
+                                class="custom-input min-w-[255px]">
+                            <a href="#" class="absolute left-4 top-1/2 -translate-y-1/2">
+                                <img src="../assets/img/icons/search.svg" alt="">
+                            </a>
+                        </div>
+                    </form>
+
+                    <!-- notification -->
+                    <div class="dropdown relative inline-block">
+
+                        <a href="#"
+                            class="dropdown-btn w-12 h-12 rounded-full border border-[#E2E6EA] flex items-center justify-center relative flex-[0_0_auto] notification">
+
+                            <img src="../assets/img/icons/bell.svg" alt="">
+
+                            <span
+                                class="text-[11px] font-medium text-white min-w-[20px] h-5 border-1 border-[#fff] bg-[#EF4444] rounded-full flex items-center justify-center absolute top-0 right-0 m-[-2px] notification-sts p-1">
+                                3
+                            </span>
+
+                        </a>
+
+                        <!-- Dropdown -->
+                        <div
+                            class="dropdown-menu absolute right-0 top-[65px] w-max bg-white rounded-lg shadow-lg border border-gray-300 z-50 p-2">
+
+                            <ul class="text-sm text-gray-600 max-h-[198px] scrollbar-none overflow-y-scroll">
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-bell"></i> New Notification
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-message"></i> New Message
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-user"></i> Someone followed you
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-gear"></i> System update
+                                    </a>
+                                </li>
+
+                                <!-- New Items -->
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-cart-shopping"></i> New order received
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-credit-card"></i> Payment successful
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-truck"></i> Order shipped
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-box"></i> Package delivered
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-star"></i> New review received
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-heart"></i> Someone liked your post
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-user-plus"></i> New user registered
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-envelope"></i> New email received
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-shield-halved"></i> Security alert
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-calendar"></i> Upcoming event reminder
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="dropdown relative inline-block">
+                        <div class="author-profile">
+                            <a href="#" class="dropdown-btn flex items-center gap-2">
+                                <img class="w-12 h-12 rounded-full object-cover author_img"
+                                    src="../assets/img/author/author-01.png" alt="">
+                                <img src="../assets/img/icons/down-angel.svg" alt="">
+                            </a>
+                        </div>
+
+                        <!-- Dropdown -->
+                        <div
+                            class="dropdown-menu absolute right-0 top-[65px] w-max bg-white rounded-lg shadow-lg border border-gray-300 z-50">
+                            <ul class="p-2 text-sm text-gray-600">
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-user"></i> Profile
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-gear"></i> Settings
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-bell"></i> Notifications
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-lock"></i> Change Password
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-right-to-bracket"></i> Login
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-red-50 text-red-500">
+                                        <i class="fa-solid fa-right-from-bracket"></i> Logout
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+
+            <!-- main page -->
+            <div class="page__body p-6">
+
+                <!-- page header -->
+                <div class="header flex items-center justify-between mb-6 flex-wrap gap-4">
+                    <div>
+                        <h1 class="text-[22px] font-bold text-[#0f172a]">Operations</h1>
+                        <p class="text-[#8D9BAD] font-normal text-base mt-1">Manage all active and historical orders</p>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <button
+                            class="group bg-[#fff] hover:bg-[#FBBF24] text-base hover:text-[#fff] text-[#8D9BAD] font-medium h-10 lg:h-12 px-7 rounded-full border border-[#E2E8F0] hover:border-[#FBBF24] transition duration-300 ease-in-out ml-auto flex items-center gap-4">
+
+                            <img src="../assets/img/icons/download-01.png" alt=""
+                                class="transition duration-200 group-hover:brightness-0 group-hover:invert">
+                            Export
+                        </button>
+                        <button
+                            class="group bg-[#fff] hover:bg-[#FBBF24] text-base hover:text-[#fff] text-[#8D9BAD] font-medium h-10 lg:h-12 px-7 rounded-full border border-[#E2E8F0] hover:border-[#FBBF24] transition duration-300 ease-in-out ml-auto flex items-center gap-2">
+
+                            <img src="../assets/img/icons/refresh.png" alt=""
+                                class="transition duration-200 group-hover:brightness-0 group-hover:invert">
+                            Refresh
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- page body -->
+                <section class="page-body-area">
+                    <div
+                        class="order-tab bg-white items-center px-[6px] gap-[10px] rounded-[100px] h-[60px] border border-[#E2E6EA] w-max grid grid-cols-2 justify-between mb-4">
+
+                        <!-- Active Button -->
+                        <a href="#"
+                            class="order-tab-btn text-base font-medium text-[#8D9BAD] h-12 flex items-center gap-[10px] justify-center px-3 rounded-[100px] col-span-1 active">
+                            Food Orders
+                            <span
+                                class="text-[14px] font-medium bg-[#111]/[0.06] h-6 rounded-[100px] w-[35px] flex items-center justify-center">
+                                8
+                            </span>
+                        </a>
+
+                        <!-- Inactive Button -->
+                        <a href="#"
+                            class="order-tab-btn text-base font-medium text-[#8D9BAD] h-12 flex items-center gap-[10px] justify-center px-3 rounded-[100px] col-span-1">
+                            Express
+                            <span
+                                class="text-[14px] font-medium bg-[#111]/[0.06] h-6 rounded-[100px] w-[35px] flex items-center justify-center">
+                                5
+                            </span>
+                        </a>
+
+                    </div>
+
+                    <div class="flex items-center gap-4 mb-6">
+                        <form action="#" class="search mr-[14px]">
+                            <div class="input relative">
+                                <input name="search" type="text" placeholder="Search orders, customers ..."
+                                    class="custom-input min-w-[255px]">
+                                <a href="#" class="absolute left-4 top-1/2 -translate-y-1/2">
+                                    <img src="../assets/img/icons/search.svg" alt="">
+                                </a>
+                            </div>
+                        </form>
+
+                        <div class="page-tab tab-btn flex items-center gap-[10px]">
+                            <a href="../pages/operations-all.html"
+                                class="h-12 flex items-center justify-center px-[35px] custom__active">All</a>
+                            <a href="" class="h-12 flex items-center justify-center px-[35px]">Pending</a>
+                            <a href="" class="h-12 flex items-center justify-center px-[35px]">Preparing</a>
+                            <a href="" class="h-12 flex items-center justify-center px-[35px]">En Route</a>
+                            <a href="" class="h-12 flex items-center justify-center px-[35px]">Delivered</a>
+                            <a href="" class="h-12 flex items-center justify-center px-[35px]">Cancelled</a>
+                        </div>
+
+                    </div>
+
+                    <div class="dashbord-table bg-white border border-[#E2E6EA] rounded-[16px] overflow-hidden">
+                        <table class="w-full min-w-[1350px]">
+                            <colgroup>
+                                <col class="w-[80px]">
+                                <col class="w-[124px]">
+                                <col class="w-[130px]">
+                                <col class="w-[48px]">
+                                <col class="w-[96px]">
+                                <col class="w-[74px]">
+                                <col class="w-[122px]">
+                                <col class="w-[85px]">
+                                <col class="w-[92px]">
+                            </colgroup>
+                            <thead class="bg-[#F1F3F5] border-b border-[#E2E6EA]">
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Restaurant</th>
+                                    <th>items</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                    <th>driver</th>
+                                    <th>time</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr
+                                    class="border-b border-[#E2E6EA] last:border-b-0 transition duration-100 hover:bg-gray-50">
+                                    <td class="id-no">FO-1000</td>
+                                    <td>Amadou Diallo</td>
+                                    <td>Le Djolof</td>
+                                    <td>2</td>
+                                    <td>1633 XOF</td>
+                                    <td>
+                                        <div
+                                            class="bg-[#FEF3C7] text-[#FBBF24] h-5 px-[8px] rounded-[18px] w-max flex items-center justify-center text-[12px] font-medium">
+                                            Pending
+                                        </div>
+                                    </td>
+                                    <td>Cheikh Ndiaye</td>
+                                    <td>30 min ago</td>
+                                    <td>
+                                        <div class="flex items-center gap-[6px]">
+                                            <button onclick="toggleModal('Order__Details')">
+                                                <img src="../assets/img/icons/eye-02.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('gps__tracking')">
+                                                <img src="../assets/img/icons/location.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('cancel__order')">
+                                                <img src="../assets/img/icons/close.png" alt="">
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="border-b border-[#E2E6EA] last:border-b-0 transition duration-100 hover:bg-gray-50">
+                                    <td class="id-no">FO-1000</td>
+                                    <td>Amadou Diallo</td>
+                                    <td>Le Djolof</td>
+                                    <td>2</td>
+                                    <td>1633 XOF</td>
+                                    <td>
+                                        <div
+                                            class="bg-[#FEF3C7] text-[#FBBF24] h-5 px-[8px] rounded-[18px] w-max flex items-center justify-center text-[12px] font-medium">
+                                            Preparing
+                                        </div>
+                                    </td>
+                                    <td>Cheikh Ndiaye</td>
+                                    <td>30 min ago</td>
+                                    <td>
+                                        <div class="flex items-center gap-[6px]">
+                                            <button onclick="toggleModal('Order__Details')">
+                                                <img src="../assets/img/icons/eye-02.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('gps__tracking')">
+                                                <img src="../assets/img/icons/location.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('cancel__order')">
+                                                <img src="../assets/img/icons/close.png" alt="">
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="border-b border-[#E2E6EA] last:border-b-0 transition duration-100 hover:bg-gray-50">
+                                    <td class="id-no">FO-1000</td>
+                                    <td>Amadou Diallo</td>
+                                    <td>Le Djolof</td>
+                                    <td>2</td>
+                                    <td>1633 XOF</td>
+                                    <td>
+                                        <div
+                                            class="bg-[#DBEAFE] text-[#60A5FA] h-5 px-[8px] rounded-[18px] w-max flex items-center justify-center text-[12px] font-medium">
+                                            Picked Up
+                                        </div>
+                                    </td>
+                                    <td>Cheikh Ndiaye</td>
+                                    <td>30 min ago</td>
+                                    <td>
+                                        <div class="flex items-center gap-[6px]">
+                                            <button onclick="toggleModal('Order__Details')">
+                                                <img src="../assets/img/icons/eye-02.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('gps__tracking')">
+                                                <img src="../assets/img/icons/location.png" alt="">
+                                            </button>
+                                            <button>
+                                                <img src="../assets/img/icons/rotate.png" alt="">
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="border-b border-[#E2E6EA] last:border-b-0 transition duration-100 hover:bg-gray-50">
+                                    <td class="id-no">FO-1000</td>
+                                    <td>Amadou Diallo</td>
+                                    <td>Le Djolof</td>
+                                    <td>2</td>
+                                    <td>1633 XOF</td>
+                                    <td>
+                                        <div
+                                            class="bg-[#D1FAE5] text-[#34D399] h-5 px-[8px] rounded-[18px] w-max flex items-center justify-center text-[12px] font-medium">
+                                            Delivered
+                                        </div>
+                                    </td>
+                                    <td>Cheikh Ndiaye</td>
+                                    <td>30 min ago</td>
+                                    <td>
+                                        <div class="flex items-center gap-[6px]">
+                                            <button onclick="toggleModal('Order__Details')">
+                                                <img src="../assets/img/icons/eye-02.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('gps__tracking')">
+                                                <img src="../assets/img/icons/location.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('cancel__order')">
+                                                <img src="../assets/img/icons/close.png" alt="">
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="border-b border-[#E2E6EA] last:border-b-0 transition duration-100 hover:bg-gray-50">
+                                    <td class="id-no">FO-1000</td>
+                                    <td>Amadou Diallo</td>
+                                    <td>Le Djolof</td>
+                                    <td>2</td>
+                                    <td>1633 XOF</td>
+                                    <td>
+                                        <div
+                                            class="bg-[#FEE2E2] text-[#F87171] h-5 px-[8px] rounded-[18px] w-max flex items-center justify-center text-[12px] font-medium">
+                                            Cancelled
+                                        </div>
+                                    </td>
+                                    <td>Cheikh Ndiaye</td>
+                                    <td>30 min ago</td>
+                                    <td>
+                                        <div class="flex items-center gap-[6px]">
+                                            <button onclick="toggleModal('Order__Details')">
+                                                <img src="../assets/img/icons/eye-02.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('gps__tracking')">
+                                                <img src="../assets/img/icons/location.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('cancel__order')">
+                                                <img src="../assets/img/icons/close.png" alt="">
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="border-b border-[#E2E6EA] last:border-b-0 transition duration-100 hover:bg-gray-50">
+                                    <td class="id-no">FO-1000</td>
+                                    <td>Amadou Diallo</td>
+                                    <td>Le Djolof</td>
+                                    <td>2</td>
+                                    <td>1633 XOF</td>
+                                    <td>
+                                        <div
+                                            class="bg-[#FEF3C7] text-[#FBBF24] h-5 px-[8px] rounded-[18px] w-max flex items-center justify-center text-[12px] font-medium">
+                                            Pending
+                                        </div>
+                                    </td>
+                                    <td>Cheikh Ndiaye</td>
+                                    <td>30 min ago</td>
+                                    <td>
+                                        <div class="flex items-center gap-[6px]">
+                                            <button onclick="toggleModal('Order__Details')">
+                                                <img src="../assets/img/icons/eye-02.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('gps__tracking')">
+                                                <img src="../assets/img/icons/location.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('cancel__order')">
+                                                <img src="../assets/img/icons/close.png" alt="">
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="border-b border-[#E2E6EA] last:border-b-0 transition duration-100 hover:bg-gray-50">
+                                    <td class="id-no">FO-1000</td>
+                                    <td>Amadou Diallo</td>
+                                    <td>Le Djolof</td>
+                                    <td>2</td>
+                                    <td>1633 XOF</td>
+                                    <td>
+                                        <div
+                                            class="bg-[#FEF3C7] text-[#FBBF24] h-5 px-[8px] rounded-[18px] w-max flex items-center justify-center text-[12px] font-medium">
+                                            Preparing
+                                        </div>
+                                    </td>
+                                    <td>Cheikh Ndiaye</td>
+                                    <td>30 min ago</td>
+                                    <td>
+                                        <div class="flex items-center gap-[6px]">
+                                            <button onclick="toggleModal('Order__Details')">
+                                                <img src="../assets/img/icons/eye-02.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('gps__tracking')">
+                                                <img src="../assets/img/icons/location.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('cancel__order')">
+                                                <img src="../assets/img/icons/close.png" alt="">
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="border-b border-[#E2E6EA] last:border-b-0 transition duration-100 hover:bg-gray-50">
+                                    <td class="id-no">FO-1000</td>
+                                    <td>Amadou Diallo</td>
+                                    <td>Le Djolof</td>
+                                    <td>2</td>
+                                    <td>1633 XOF</td>
+                                    <td>
+                                        <div
+                                            class="bg-[#DBEAFE] text-[#60A5FA] h-5 px-[8px] rounded-[18px] w-max flex items-center justify-center text-[12px] font-medium">
+                                            Picked Up
+                                        </div>
+                                    </td>
+                                    <td>Cheikh Ndiaye</td>
+                                    <td>30 min ago</td>
+                                    <td>
+                                        <div class="flex items-center gap-[6px]">
+                                            <button onclick="toggleModal('Order__Details')">
+                                                <img src="../assets/img/icons/eye-02.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('gps__tracking')">
+                                                <img src="../assets/img/icons/location.png" alt="">
+                                            </button>
+                                            <button>
+                                                <img src="../assets/img/icons/rotate.png" alt="">
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="border-b border-[#E2E6EA] last:border-b-0 transition duration-100 hover:bg-gray-50">
+                                    <td class="id-no">FO-1000</td>
+                                    <td>Amadou Diallo</td>
+                                    <td>Le Djolof</td>
+                                    <td>2</td>
+                                    <td>1633 XOF</td>
+                                    <td>
+                                        <div
+                                            class="bg-[#D1FAE5] text-[#34D399] h-5 px-[8px] rounded-[18px] w-max flex items-center justify-center text-[12px] font-medium">
+                                            Delivered
+                                        </div>
+                                    </td>
+                                    <td>Cheikh Ndiaye</td>
+                                    <td>30 min ago</td>
+                                    <td>
+                                        <div class="flex items-center gap-[6px]">
+                                            <button onclick="toggleModal('Order__Details')">
+                                                <img src="../assets/img/icons/eye-02.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('gps__tracking')">
+                                                <img src="../assets/img/icons/location.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('cancel__order')">
+                                                <img src="../assets/img/icons/close.png" alt="">
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="border-b border-[#E2E6EA] last:border-b-0 transition duration-100 hover:bg-gray-50">
+                                    <td class="id-no">FO-1000</td>
+                                    <td>Amadou Diallo</td>
+                                    <td>Le Djolof</td>
+                                    <td>2</td>
+                                    <td>1633 XOF</td>
+                                    <td>
+                                        <div
+                                            class="bg-[#FEE2E2] text-[#F87171] h-5 px-[8px] rounded-[18px] w-max flex items-center justify-center text-[12px] font-medium">
+                                            Cancelled
+                                        </div>
+                                    </td>
+                                    <td>Cheikh Ndiaye</td>
+                                    <td>30 min ago</td>
+                                    <td>
+                                        <div class="flex items-center gap-[6px]">
+                                            <button onclick="toggleModal('Order__Details')">
+                                                <img src="../assets/img/icons/eye-02.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('gps__tracking')">
+                                                <img src="../assets/img/icons/location.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('cancel__order')">
+                                                <img src="../assets/img/icons/close.png" alt="">
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr
+                                    class="border-b border-[#E2E6EA] last:border-b-0 transition duration-100 hover:bg-gray-50">
+                                    <td class="id-no">FO-1000</td>
+                                    <td>Amadou Diallo</td>
+                                    <td>Le Djolof</td>
+                                    <td>2</td>
+                                    <td>1633 XOF</td>
+                                    <td>
+                                        <div
+                                            class="bg-[#FEF3C7] text-[#FBBF24] h-5 px-[8px] rounded-[18px] w-max flex items-center justify-center text-[12px] font-medium">
+                                            Pending
+                                        </div>
+                                    </td>
+                                    <td>Cheikh Ndiaye</td>
+                                    <td>30 min ago</td>
+                                    <td>
+                                        <div class="flex items-center gap-[6px]">
+                                            <button onclick="toggleModal('Order__Details')">
+                                                <img src="../assets/img/icons/eye-02.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('gps__tracking')">
+                                                <img src="../assets/img/icons/location.png" alt="">
+                                            </button>
+                                            <button onclick="toggleModal('cancel__order')">
+                                                <img src="../assets/img/icons/close.png" alt="">
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+        <div class="backdrop"></div>
+    </div>
+
+    <!-- js link -->
+    <script src="../js/dropdown.js"></script>
+    <script src="../js/sidebar-collapsed.js"></script>
+    <script src="../js/modal.js"></script>
+</body>
+
+</html>
