@@ -92,6 +92,22 @@
     .sidebar_close_icon {
         display: flex;
     }
+
+    .login-area form .input-item input::placeholder {
+        font-size: 15px;
+    }
+
+    .login-area form .input-item label {
+        font-size: 16px;
+    }
+
+    .login-area .input-item.mb-6 {
+        margin-bottom: 16px;
+    }
+
+    .login-area form .input-item input {
+        height: 40px;
+    }
 }
 
 @media (max-width: 530px) {
