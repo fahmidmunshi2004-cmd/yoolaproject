@@ -140,6 +140,10 @@
 }
 
 @media (max-width: 530px) {
+    body.sidebar-collapsed .page__body-wrapper {
+        width: calc(100%) !important;
+    }
+
     .rs-sidebar-wrapper {
         position: fixed;
         transform: translateX(-100%);
