@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoola</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="../assets/img/fav-icon/yoola-fav-icon.png" type="image/x-icon">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <div class="grid grid-cols-12">
+        <!-- sidebar -->
+        <section
+            class="rs-sidebar-wrapper  sidebar-area w-[307px] bg-white col-span-2 border-r border-[#E2E6EA] fixed left-0 top-0 z-[99] h-full overflow-y-scroll scrollbar-none">
+
+            <!-- sidebar-header -->
+            <div
+                class="header h-[84px] p-4 border-b border-[#E2E6EA] flex flex-col justify-center sticky top-0 z-10 bg-white relative">
+                <div class="logo">
+                    <a href="#" class="side-bar-logo flex items-center relative">
+                        <img class="absolute left-0 big-logo" src="../assets/img/logo/main-logo.png" alt="">
+                        <img class="absolute right-[-70px] small-logo" src="../assets/img/fav-icon/yoola-fav-icon.png"
+                            alt="">
+                    </a>
+                    <div
+                        class="sidebar_close_icon absolute right-2 top-2 w-7 h-7 rounded-[4px] border border-[#FBBF24] text-[#FBBF24] flex items-center justify-center hidden">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- sidebar-main-content -->
+            <div class="main-content p-4">
+
+                <!-- Core -->
+                <div class="item mb-8">
+                    <h4 class="text-[#C5CDD5] text-sm font-medium mb-4 uppercase">
+                        Core
+                    </h4>
+
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="../pages/overview.html" class="active">
+                                <img src="../assets/img/icons/objects-column.svg" alt="">
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/operations-all.html">
+                                <img src="../assets/img/icons/bag-01.svg" alt="">
+                                <span>Operations</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/room-service.svg" alt="">
+                                <span>Restaurants</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/delivery-man.svg" alt="">
+                                <span>Drivers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/user-basket.svg" alt="">
+                                <span>Customers</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- finance -->
+                <div class="item mb-8">
+                    <h4 class="text-[#C5CDD5] text-sm font-medium mb-4 uppercase">
+                        finance
+                    </h4>
+
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/chart-pie-alt.svg" alt="">
+                                <span>Finance</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/pricing.html">
+                                <img src="../assets/img/icons/align-center.svg" alt="">
+                                <span>JURA Pricing</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Growth -->
+                <div class="item mb-8">
+                    <h4 class="text-[#C5CDD5] text-sm font-medium mb-4 uppercase">
+                        Growth
+                    </h4>
+
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/bullseye-arrow.svg" alt="">
+                                <span>Marketing</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/gift-01.svg" alt="">
+                                <span>Referrals</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/document.svg" alt="">
+                                <span>Blog & Content</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="item mb-8">
+                    <h4 class="text-[#C5CDD5] text-sm font-medium mb-4 uppercase">
+                        Support
+                    </h4>
+
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/headphone.svg" alt="">
+                                <span>Support</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- system -->
+                <div class="item mb-8">
+                    <h4 class="text-[#C5CDD5] text-sm font-medium mb-4 uppercase">
+                        system
+                    </h4>
+
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/icons/setting-01.svg" alt="">
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- sign out -->
+                <div class="sidebar-author flex items-center gap-4 py-7 pb-0 border-t border-[#E2E6EA] mt-[80px]">
+                    <div class="author-left-content flex gap-4 items-center">
+                        <a href="#">
+                            <img class="sidebar-author-img w-11 h-11 rounded-full object-cover"
+                                src="../assets/img/author/author-01.png" alt="">
+                        </a>
+                        <div class="sidebar-info">
+                            <h5 class="text-lg font-semibold">Super Admin</h5>
+                            <span class="text-base font-normal text-[#8D9BAD]">admin@yoola.sn</span>
+                        </div>
+                    </div>
+                    <div class="icon ml-auto">
+                        <a href="#">
+                            <img src="../assets/img/icons/exit.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="page__body-wrapper  main-content col-span-10 absolute right-0 w-[calc(100%-307px)]">
+            <!-- header -->
+            <header
+                class="header-area h-[84px] flex items-center justify-between p-6 bg-white border-b border-[#E2E6EA] sticky top-0 z-10 bg-white flex-wrap gap-3">
+
+                <!-- header left-->
+                <div class="left-content flex items-center gap-10">
+                    <button class="sidebar-toggle-btn">
+                        <img src="../assets/img/icons/menu-burger.svg" alt="">
+                    </button>
+                    <div class="title flex items-center gap-[10px] hidden md:flex">
+                        <h3 class="text-base font-normal text-[#8D9BAD]">Yoola Admin</h3>
+                        <img src="../assets/img/icons/right-arrow.svg" alt="">
+                        <h4 class="text-base font-semibold text-[#0D1828]">JURA Pricing</h4>
+                    </div>
+                </div>
+
+                <!-- header right-->
+                <div class="right-content flex flex-wrep items-center gap-[10px]">
+                    <form action="#" class="search mr-[14px]">
+                        <div class="input relative">
+                            <input name="search" type="text" placeholder="Search  ..."
+                                class="custom-input min-w-[255px]">
+                            <a href="#" class="absolute left-4 top-1/2 -translate-y-1/2">
+                                <img src="../assets/img/icons/search.svg" alt="">
+                            </a>
+                        </div>
+                    </form>
+
+                    <!-- notification -->
+                    <div class="dropdown relative inline-block">
+
+                        <a href="#"
+                            class="dropdown-btn w-12 h-12 rounded-full border border-[#E2E6EA] flex items-center justify-center relative flex-[0_0_auto] notification">
+
+                            <img src="../assets/img/icons/bell.svg" alt="">
+
+                            <span
+                                class="text-[11px] font-medium text-white min-w-[20px] h-5 border-1 border-[#fff] bg-[#EF4444] rounded-full flex items-center justify-center absolute top-0 right-0 m-[-2px] notification-sts p-1">
+                                3
+                            </span>
+
+                        </a>
+
+                        <!-- Dropdown -->
+                        <div
+                            class="dropdown-menu absolute right-0 top-[65px] w-max bg-white rounded-lg shadow-lg border border-gray-300 z-50 p-2">
+
+                            <ul class="text-sm text-gray-600 max-h-[198px] scrollbar-none overflow-y-scroll">
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-bell"></i> New Notification
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-message"></i> New Message
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-user"></i> Someone followed you
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-gear"></i> System update
+                                    </a>
+                                </li>
+
+                                <!-- New Items -->
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-cart-shopping"></i> New order received
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-credit-card"></i> Payment successful
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-truck"></i> Order shipped
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-box"></i> Package delivered
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-star"></i> New review received
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-heart"></i> Someone liked your post
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-user-plus"></i> New user registered
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-envelope"></i> New email received
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-shield-halved"></i> Security alert
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-calendar"></i> Upcoming event reminder
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="dropdown relative inline-block">
+                        <div class="author-profile">
+                            <a href="#" class="dropdown-btn flex items-center gap-2">
+                                <img class="w-12 h-12 rounded-full object-cover author_img"
+                                    src="../assets/img/author/author-01.png" alt="">
+                                <img src="../assets/img/icons/down-angel.svg" alt="">
+                            </a>
+                        </div>
+
+                        <!-- Dropdown -->
+                        <div
+                            class="dropdown-menu absolute right-0 top-[65px] w-max bg-white rounded-lg shadow-lg border border-gray-300 z-50">
+                            <ul class="p-2 text-sm text-gray-600">
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-user"></i> Profile
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-gear"></i> Settings
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-bell"></i> Notifications
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-lock"></i> Change Password
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-gray-100">
+                                        <i class="fa-solid fa-right-to-bracket"></i> Login
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-3 px-2 py-2 rounded-[6px] hover:bg-red-50 text-red-500">
+                                        <i class="fa-solid fa-right-from-bracket"></i> Logout
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+
+            <!-- main page -->
+            <div class="page__body p-6">
+                fgh
+            </div>
+        </div>
+        <div class="backdrop"></div>
+    </div>
+
+    <!-- js link -->
+    <script src="../js/dropdown.js"></script>
+    <script src="../js/sidebar-collapsed.js"></script>
+    <script src="../js/tab.js"></script>
+</body>
+
+</html>
