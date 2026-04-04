@@ -44,3 +44,45 @@ backdrop.addEventListener('click', () => {
     sidebar.classList.remove('active');
     backdrop.classList.remove('active');
 });
+
+
+//=============== sub menu dropdown ===================//
+document.querySelectorAll('.sidebar-list > li > a').forEach(trigger => {
+    trigger.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const submenu = this.parentElement.querySelector('.submenu');
+        if (!submenu) return;
+
+        submenu.classList.toggle('open');
+    });
+});
+
+
+//=============== sub menu left border ===================//
+const submenuLinks = document.querySelectorAll('.submenu li a');
+let activeIndex = -1;
+submenuLinks.forEach((link, index) => {
+    if (link.href === window.location.href) {
+        activeIndex = index;
+    }
+});
+
+submenuLinks.forEach((link, index) => {
+
+    if (index === activeIndex) {
+        link.classList.add('active');
+
+        // submenu open
+        const submenu = link.closest('.submenu');
+        if (submenu) {
+            submenu.classList.add('open');
+        }
+
+    }
+    else if (index < activeIndex) {
+        link.classList.add('border_left_active');
+    }
+});
+
+

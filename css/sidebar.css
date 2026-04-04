@@ -139,3 +139,133 @@ body.sidebar-collapsed .sidebar-author .author-left-content {
 body.sidebar-collapsed .sidebar-author .icon {
     margin: auto;
 }
+
+
+/* //////////////// submenu /////////////////// */
+.sidebar-list li a {
+    position: relative;
+}
+
+.sidebar-list li {
+    position: relative;
+}
+
+
+.sidebar-list .submenu li a:hover {
+    background: var(--yellow-50);
+}
+
+.submenu li a {
+    position: relative;
+}
+
+.sidebar-list .submenu li a {
+    background: #F1F3F5;
+    overflow: visible !important;
+    white-space: nowrap;
+}
+
+.submenu li a::before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: -45px;
+    width: 16px;
+    height: 70px;
+    border-radius: 0px 0px 0px 10px;
+    border-bottom: 2px solid #e8e8eb;
+    border-left: 2px solid #e8e8eb;
+    z-index: -1;
+}
+
+.submenu li a.active {
+    background: var(--yellow-50);
+}
+
+.sidebar-list .submenu li a.active::after {
+    display: none;
+}
+
+.submenu li a.active::before {
+    border-bottom: 2px solid var(--yellow-500);
+    border-left: 2px solid var(--yellow-500);
+}
+
+.submenu li a.active::before {
+    border-bottom: 2px solid var(--yellow-500);
+    border-left: 2px solid var(--yellow-500);
+}
+
+/* auto index */
+.submenu li:nth-child(1) {
+    --i: 1;
+}
+
+.submenu li:nth-child(2) {
+    --i: 2;
+}
+
+.submenu li:nth-child(3) {
+    --i: 3;
+}
+
+.submenu li:nth-child(4) {
+    --i: 4;
+}
+
+.submenu li:nth-child(5) {
+    --i: 5;
+}
+
+.submenu li:nth-child(6) {
+    --i: 6;
+}
+
+.submenu li:nth-child(7) {
+    --i: 7;
+}
+
+.submenu li:nth-child(8) {
+    --i: 8;
+}
+
+.submenu li:nth-child(9) {
+    --i: 9;
+}
+
+.submenu li:nth-child(10) {
+    --i: 10;
+}
+
+.submenu li a::before {
+    z-index: calc(-1 * var(--i));
+}
+
+.submenu li a::before {
+    z-index: calc(-1 * var(--i));
+}
+
+
+.submenu {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease;
+}
+
+.submenu-inner {
+    overflow: hidden;
+}
+
+/* open */
+.submenu.open {
+    grid-template-rows: 1fr;
+}
+
+.submenu li a.border_left_active::before {
+    border-left: 2px solid var(--yellow-500);
+    border-radius: 0px 0px 0px 6px;
+}
+
+.sidebar-collapsed .submenu {
+    display: none;
+}
